@@ -161,7 +161,7 @@ class AppraisalRating extends React.Component{
                                     <Grid container>
                                         <Grid item md={12} sm={12}>
                                             <div className="appRating_para">
-                                                <p>Always on time and completes the Tasks well ahead of time</p>
+                                                <p style={{margin:'7px'}}>Always on time and completes the Tasks well ahead of time</p>
                                             </div>
                                         </Grid>
                                         <Grid item md={12} sm={12}>
@@ -177,7 +177,7 @@ class AppraisalRating extends React.Component{
                                 <Grid container>
                                     <Grid item md={12} sm={12}>
                                     <div className="appRating_para">
-                                        <p>Maintains the time and completes the Task with few reminders</p>
+                                        <p style={{margin:'7px'}}>Maintains the time and completes the Task with few reminders</p>
                                     </div>
                                     </Grid>
                                         <Grid item md={12} sm={12}>
@@ -193,7 +193,7 @@ class AppraisalRating extends React.Component{
                                 <Grid container>
                                     <Grid itemd md={12} sm={12}>
                                     <div className="appRating_para">
-                                        <p>Unable to keep up with times and Requires constant reminders to Complete the tasks</p>
+                                        <p style={{margin:'7px'}}>Unable to keep up with times and Requires constant reminders to Complete the tasks</p>
                                     </div>
                                     </Grid>
                                         <Grid item md={12} sm={12}>

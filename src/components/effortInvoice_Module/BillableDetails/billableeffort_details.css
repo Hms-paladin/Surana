@@ -1,9 +1,7 @@
 .billable_align{
     text-align: end;
 }
-.grid_alignment_checklist_billable{
-    padding: 13px;
-}
+
 .billable_table_footer_align{
     display:flex;
     justify-content: space-evenly;
@@ -11,13 +9,31 @@
     cursor: pointer;
 }
 .table_padding{
-    padding-right: 50px;
+    padding-right: 32px;
 }
 .grid_alignment_checklist table thead tr th{
     background-color: #3f51b5;
     color: white;
+    font-weight: 100;
+    font-size: 13px;
 }
 
 .bill_input input{
     width: 60px;
+}
+.checklist_activity_border_bilable{
+    /* border: 1px solid lightgray; */
+    position: relative;
+    margin-top: 20px;
+    
+}
+.billable_table table tbody tr th td{
+    padding-right: 30px;
+    font-size: 15px;
+    padding-right: 20px;
+}
+.billable_table table tbody tr td{
+    font-size: 13px !important;
+    padding-left: 18px;
+
 }

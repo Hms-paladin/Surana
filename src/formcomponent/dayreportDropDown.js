@@ -53,10 +53,10 @@ class DayreportDropDown extends React.Component {
                     mode={this.props.mode && this.props.mode}
                     size={this.props.size && this.props.size}
                     showArrow
-                    showSearch
+                    showSearch={this.props.showSearch && this.props.showSearch}
                     filterOption={(input, option) =>
                         // console.log(option.props.children[1].toLowerCase(),"daslfja")
-                        option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                        option.props.children[1].toLowerCase().indexOf(input.toLowerCase()) >= 0
                     }
                 >
                     {this.props.option && (this.props.option).map((val, index) => {

@@ -99,7 +99,7 @@ class ManagingReview extends React.Component{
                         error={this.state.managingdata.advice_hod_if.error} 
                         errmsg={this.state.managingdata.advice_hod_if.errmsg}
                     ></Textareaantd>
-                        <Textareaantd label="Instructions to the head Admin & HRD for action to be taken"
+                        <Textareaantd label="Instructions to the head Admin & HOD for action to be taken"
                         changeData={(data)=>this.changeDynamic(data,'instuctions_head')} 
                         value={this.state.managingdata.instuctions_head.value} 
                         error={this.state.managingdata.instuctions_head.error} 

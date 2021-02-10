@@ -89,6 +89,7 @@ import BillableHead from "../effortInvoice_Module/BillableHead/billable_head";
 import OpeDetails from "../effortInvoice_Module/OPeDetails/opeDetails";
 import Invoice_Details from "../effortInvoice_Module/InvoiceDetails/invoice_details";
 import AddApproval from "../effortInvoice_Module/AddApproval/add_approval";
+import OpeApproval from "../effortInvoice_Module/opeapproval/OpeApproval";
 
 // Client and Contact Module
 import ClientTable from "../client&contact/client_table/ClientTable";
@@ -424,7 +425,7 @@ class MiniDrawer extends React.Component {
                                     <ListItemText primary="dd" />
                                 </MenuItem> */}
 {/* Employee Appraisal start */}
-                                <MenuItem className="ml-3" button onClick={() => this.collapse(14)}  component={Link} component={Link} to="/Home/Appraisal">
+                                <MenuItem className="ml-3" button onClick={() => this.collapse(14)}  >
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
@@ -434,7 +435,7 @@ class MiniDrawer extends React.Component {
                                 <Collapse in={this.state.expand14} timeout="auto" unmountOnExit>
                                     <List component="div" disablePadding>
 
-                                    <MenuItem   button className={classes.nested} component={Link} to="/Home/empuser">
+                                    <MenuItem   button className={classes.nested} component={Link} to="/Home/empuser"  component={Link} to="/Home/Appraisal">
                                             <ListItemIcon className="ml-3">
                                                 <InboxIcon />
                                             </ListItemIcon>
@@ -682,7 +683,15 @@ class MiniDrawer extends React.Component {
                         {/* Productivity End */}
 
                         {/* Invoice - Five */}
-                        <MenuItem button onClick={() => this.collapse(5)}>
+                        
+                        <MenuItem button component={Link} to="/Home/billablehead">
+                            <ListItemIcon>
+                                <InboxIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Billable Effort Invoice" />
+                           
+                        </MenuItem>
+                        {/* <MenuItem button onClick={() => this.collapse(5)}>
                             <ListItemIcon>
                             <img src={Invoice} className="navbarLogo" />
                             </ListItemIcon>
@@ -690,7 +699,7 @@ class MiniDrawer extends React.Component {
                             {this.state.expand5 ? <ExpandLess /> : <ExpandMore />}
                         </MenuItem>
                         <Collapse in={this.state.expand5} timeout="auto" unmountOnExit>
-                        </Collapse>
+                        </Collapse> */}
                         {/* Invoice End - Five */}
 
 
@@ -888,16 +897,22 @@ class MiniDrawer extends React.Component {
                             </List>
                         </Collapse> */}
 
-
-
-
                         {/* <MenuItem button onClick={() => this.collapse(8)}>
                             <ListItemIcon>
                                 <InboxIcon />
                             </ListItemIcon>
-                            <ListItemText primary="Effort Invoice Managenent" />
+                            <ListItemText primary="Billable Effort Invoice" />
                             {this.state.expand6 ? <ExpandLess /> : <ExpandMore />}
-                        </MenuItem>
+                        </MenuItem> */}
+{/* 
+                          <MenuItem button component={Link} to="/Home/billablehead">
+                            <ListItemIcon>
+                                <InboxIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Billable Effort Invoice" />
+                           
+                        </MenuItem> */}
+
                         <Collapse in={this.state.expand8} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
 
@@ -1154,6 +1169,7 @@ class MiniDrawer extends React.Component {
                     <Route exact path={`${this.props.match.path}/billableope`} component={OpeDetails}/>
                     <Route exact path={`${this.props.match.path}/invoiceDtails`} component={Invoice_Details}/>
                     <Route exact path={`${this.props.match.path}/addapproval`} component={AddApproval}/>
+                    <Route exact path={`${this.props.match.path}/opeapproval`} component={OpeApproval}/>
 
                     {/* Client and Contact Modukle */}
                     <Route exact path={`${this.props.match.path}/clienttable`} component={ClientTable }/>

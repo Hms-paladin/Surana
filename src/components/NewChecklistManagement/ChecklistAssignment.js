@@ -7,6 +7,8 @@ import AddIcon from '@material-ui/icons/Add';
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditOutlinedIcon from '@material-ui/icons/EditOutlined';
 import { Select, Table,DatePicker  } from 'antd';
+import Button from 'react-bootstrap/Button';
+
 
 const { Option } = Select;
 const { Column } = Table;
@@ -114,6 +116,16 @@ class ChecklistAssignment extends React.Component{
                     />
                 </Table>
                 </div>
+
+                <Grid container direction="row" justify="center" alignItems="center" className="mt-5" spacing={3}>
+                            <Grid item >
+                                <Button className="btnwidth btnclr">Submit</Button>
+                            </Grid>
+                            
+                            <Grid item >
+                              <Button className="btnwidth btnclr_outline">Cancel</Button>
+                            </Grid>
+                        </Grid>
 
                 
                     </div>

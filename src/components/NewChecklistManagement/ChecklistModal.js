@@ -9,47 +9,24 @@ import RadioGroup from '@material-ui/core/RadioGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 
-import Dropdownantd from '../../formcomponent/dropdownantd'
+import Dropdownantd from '../../formcomponent/dropdownantd';
+import Calendarbox from "../../formcomponent/calenderbox";
 
 class ChecklistModal extends React.Component{
     render(){
         return(
             <div className="top_move">
-            {/* <h5 ><b>Continuos Monitering</b></h5>
-            <Grid container spacing={2} className="mt-2 mb-2">
-        <Grid item md={2} sm={6} className="w-100">
-        <Dropdownantd
-              className={"w-100"}
-              label="Employee"
-            />
-          </Grid>
-          <Grid item md={2} sm={6} className="w-100">
-        <Dropdownantd
-              className={"w-100"}
-              label="Checklist Item"
-            />
-          </Grid>
-          <Grid item md={2} sm={6} className="w-100">
-        <Dropdownantd
-              className={"w-100"}
-              label="Department"
-            />
-          </Grid>
-          <Grid item md={2} sm={6} className="w-100">
-        <Inputantd
-              className={"w-100"}
-              label="Time"
-            />
-          </Grid>
-          </Grid> */}
-
           <div className="">
+               <FormControl component="fieldset">
+                  <RadioGroup defaultValue="Daily" aria-label="gender" name="customized-radios">
               <div className="card-body flex font_bold">
                   <div className="w-50 ">
-                  <FormControl component="fieldset">
-                  <RadioGroup defaultValue="Daily" aria-label="gender" name="customized-radios">
+      
+                   <FormControlLabel value="On Demand" control={<Radio color="primary"/>} 
+                    label="On Demand" className="w-50" />
+
                     <FormControlLabel value="Daily" control={<Radio color="primary"/>} 
-                    label="Daily" className="w-25" />
+                    label="Daily" className="w-50"  />
 
                     <FormControlLabel value="Alternate Days" control={<Radio color="primary"/>} 
                     label="Alternate Days" className="w-50" />
@@ -136,7 +113,7 @@ class ChecklistModal extends React.Component{
                     label="Fortnightly" className="w-25" />
 
                     <div className="flex checklist_ml">
-                    <span className="mt-1 mr-2">Date:</span><Dropdownantd breakclass="dis_none" className="w-100"
+                    <span className="mt-1 mr-2">Date:</span><Calendarbox breakclass="dis_none" className="w-100"
                      divclass="w-50"/>
                     </div>
 
@@ -144,16 +121,17 @@ class ChecklistModal extends React.Component{
                     label="Monthly" className="w-25"/>
 
                     <div className="flex checklist_ml">
-                    <span className="mt-1 mr-2">Date:</span><Dropdownantd breakclass="dis_none" className="w-100"
+                    <span className="mt-1 mr-2">Date:</span><Calendarbox breakclass="dis_none" className="w-100"
                      divclass="w-50"/>
                     </div>
 
-                  </RadioGroup>
-                </FormControl>
+                
+
+                  {/* </RadioGroup>
+                </FormControl> */}
                   </div>    
                   <div className="w-50 borderleft_checklistmanagement">
-                  <FormControl component="fieldset" className="ml-3 w-100">
-                  <RadioGroup defaultValue="Alternate Month" aria-label="gender" name="customized-radios">
+                  
                    
                     <FormControlLabel value="Alternate Month" control={<Radio color="primary"/>} 
                     label="Alternate Month" className=""/>
@@ -165,7 +143,7 @@ class ChecklistModal extends React.Component{
                     </div>
                     <div className="flex w-50">
                     <span className="mt-1 mr-2">Date:</span>
-                    <Dropdownantd breakclass="dis_none" className="w-100" divclass="w-50"/>
+                    <Calendarbox breakclass="dis_none" className="w-100" divclass="w-50"/>
                     </div>
                     </div>
 
@@ -180,7 +158,7 @@ class ChecklistModal extends React.Component{
                     </div>
                     <div className="flex w-50">
                     <span className="mt-1 mr-2">Date:</span>
-                    <Dropdownantd breakclass="dis_none" className="w-100" divclass="w-50"/>
+                    <Calendarbox breakclass="dis_none" className="w-100" divclass="w-50"/>
                     </div>
                     </div>
 
@@ -194,7 +172,7 @@ class ChecklistModal extends React.Component{
                     </div>
                     <div className="flex w-50">
                     <span className="mt-1 mr-2">Date:</span>
-                    <Dropdownantd breakclass="dis_none" className="w-100" divclass="w-50"/>
+                    <Calendarbox breakclass="dis_none" className="w-100" divclass="w-50"/>
                     </div>
                     </div>
 
@@ -208,21 +186,16 @@ class ChecklistModal extends React.Component{
                     </div>
                     <div className="flex w-50">
                     <span className="mt-1 mr-2">Date:</span>
-                    <Dropdownantd breakclass="dis_none" className="w-100" divclass="w-50"/>
+                    <Calendarbox breakclass="dis_none" className="w-100" divclass="w-50"/>
                     </div>
                     </div>
                     
-                    </RadioGroup>
-                    </FormControl>
+         
 
-                    <Grid container
-                direction="row"
-                justify="center"
-                alignItems="center" 
-                className="mt-2 ml-2"
+                    <Grid container direction="row"  justify="center"  alignItems="center"  className="mt-2 ml-2"
                 spacing={3}>
                     <Grid item className="mt-4" >
-                    <Button className="btnwidth btnclr">Submit</Button>
+                       <Button className="btnwidth btnclr">Submit</Button>
                     </Grid>
                     <Grid item className="mt-4">
                     <Button className="btnwidth btnclr_outline">Cancel</Button>
@@ -232,6 +205,8 @@ class ChecklistModal extends React.Component{
                   </div>
 
               </div>
+              </RadioGroup>
+                    </FormControl>
           </div>
           </div>  
         )
@@ -239,4 +214,3 @@ class ChecklistModal extends React.Component{
 }
 
 export default ChecklistModal;
-

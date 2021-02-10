@@ -6,8 +6,34 @@ import Inputantd from '../../../../../formcomponent/inputantd';
 import Dropdownantd from '../../../../../formcomponent/dropdownantd';
 import Textareaantd from '../../../../../formcomponent/textareaantd';
 import './AppraisalHod.css';
+// import AppraisalHod from "./appraisalhod/AppraisalHod";
+import AppraisalRating from "../appraisalraing/AppraisalRating";
+import HodReview from "../hodreview/HodReview";
 
 class AppraisalHod extends React.Component{
+    // state={
+    //     skipTab:true
+    // }
+
+    // click_func=()=>{
+    //     alert("rr")
+    //     this.setState({
+    //         skipTab:this.state.skipTab,
+        
+    //     })
+    //     if(this.state.skipTab=== true){
+    //         return(
+    //             <AppraisalRating/>
+    //         )
+         
+    //     }
+    //     else{
+    //         return(
+    //             <HodReview/>
+    //         )
+         
+    //     }
+    // }
     render(){
         return(
             <React.Fragment>
@@ -178,7 +204,7 @@ class AppraisalHod extends React.Component{
                                    <Button className="btnwidth btnclr">Cancel</Button>
                                 </Grid>
                                 <Grid item >
-                                   <Button className="btnwidth btnclr_outline">Next</Button>
+                                   <Button className="btnwidth btnclr_outline" >Next</Button>
                                </Grid>
                               </Grid>
                 </div>

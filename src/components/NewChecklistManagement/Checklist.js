@@ -137,7 +137,7 @@ changeDynamic=(data,key)=>{
                                     <Grid md={11} sm={12}>
                                         <Grid container spacing ={2}  >
                                             <Grid item md={4} sm={5}>
-                                                <Inputantd label ="Biometric Authentication" className="w-100" 
+                                                <Inputantd label ="Checklist Task" className="w-100" 
                                                   changeData={(data)=>this.changeDynamic(data,'biometric_authentication')} 
                                                   value={this.state.checklistdata.biometric_authentication.value} 
                                                   error={this.state.checklistdata.biometric_authentication.error} 
@@ -145,10 +145,10 @@ changeDynamic=(data,key)=>{
                                                   />
                                             </Grid>
                                             <Grid item md={4} sm={5}>
-                                                <Dropdownantd label="On Demand" className="w-100" />
+                                                <Dropdownantd label="Frequency" className="w-100" />
                                             </Grid> 
                                             <Grid item md={4} sm={12}>
-                                                <Dropdownantd label="High" className="w-100" />
+                                                <Dropdownantd label="Priority" className="w-100" />
                                             </Grid>
                                             </Grid>  
                                         </Grid>
@@ -161,13 +161,13 @@ changeDynamic=(data,key)=>{
                                         <Grid md={11} sm={12}>
                                             <Grid container spacing ={2}>
                                                 <Grid item md={4} sm={5}>
-                                                <Inputantd  placeholder="Checklist Task"  className="w-100" />
+                                                <Inputantd  placeholder="Biometric Authentication"  className="w-100" />
                                                 </Grid>
                                                 <Grid item md={4} sm={5} onClick={this.showModal}>
-                                                    <Dropdownantd placeholder="Frequency" className="w-100" />
+                                                    <Dropdownantd placeholder="On Demand" className="w-100" />
                                                 </Grid> 
                                                 <Grid item md={4} sm={12}>
-                                                    <Dropdownantd placeholder="Priority" className="w-100" />
+                                                    <Dropdownantd placeholder="High" className="w-100" />
                                                 </Grid>
                                             </Grid>  
                                         </Grid>
@@ -192,7 +192,7 @@ changeDynamic=(data,key)=>{
 
                 <div>
      
-        <Modal className="close_hide"
+        <Modal className="checkmodal_align"
           visible={this.state.visible}
           onCancel={this.handleCancel}
           footer={null}

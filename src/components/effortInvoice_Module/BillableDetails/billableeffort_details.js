@@ -8,17 +8,17 @@ class BillableDetails extends React.Component{
           {  
               index:1,
               heading:"Billable Hours",
-              Table:[ "Description", "Date", "Resource", "Rate", "Actual Hours", "Billable Hours","Amount"]
+              Table:[  "Date","Activitiy",  "Description", "Resource", "Actual Hours", "Rate(Rs)",  "Billable Hours","Amount(Rs)"]
           },
           {
             index:2,
             heading:"External Consultant",
-            Table:[ "Description", "Date", "Resource", "Rate", "Actual Hours", "Billable Hours","Amount"]
+            Table:[ "Date","Description", "Resource","Activitiy", "Actual Hours", "Rate(Rs)",  "Billable Hours","Amount(Rs)"]
         },
         {
             index:3,
             heading:"OPE",
-            Table:[ "Expense", "Date", "Resource", "Billable","Amount"]
+            Table:["Date", "Expense",  "Resource", "Billable","Amount(Rs)"]
         },
       ]
     }
@@ -27,16 +27,17 @@ class BillableDetails extends React.Component{
         return(
            <React.Fragment>
                     <div className ="grid_alignment_checklist_billable">
-                         <div className ="checklist_activity_border">
+                         <div className ="checklist_activity_border_bilable">
        {/* Heading */}
                             <div className ="avtivity_background">
                                <p className ="top_checklist">Billable Hours</p>
                             </div>
       {/* Table Component */}
-                            <div className ="grid_alignment_checklist">
+                            <div className ="grid_alignment_checklist billable_table">
                                 <table >
                                     <thead>
                                         <tr>
+                                        <th scope="col">Billed</th>
                                         <th scope="col"><Checkbox></Checkbox></th>
                                         
                                         {this.state.BillableArrays[0].Table.map((tableData)=>{
@@ -50,25 +51,30 @@ class BillableDetails extends React.Component{
                                          </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                        <th scope="row"><Checkbox></Checkbox></th>
-                                        <td>Prepare Legal Papers</td>
+                                        <tr className="table_billable">
+                                        <th scope="row"></th>
+                                        <td><Checkbox></Checkbox></td>
                                         <td>21/05/2019</td>
+                                        <td>Prepare </td>
                                         <td>Personnel</td>
                                         <td>Rs.50</td>
                                         <td>2</td>
                                         <td className="bill_input"><input size="small"/></td>
+                                        <td>2</td>
                                         <td>Rs.100</td>
                                         </tr>
-                                        <tr>
-                                        <th scope="row"><Checkbox></Checkbox></th>
+
+                                        <tr className="table_billable">
+                                        <th scope="row"></th>
+                                        <td><Checkbox></Checkbox></td>
+                                        <td>26/03/2019</td>
                                         <td>Documentation</td>
-                                        <td>26/05/2019</td>
-                                        <td>Personnel</td>
+                                        <td>Case Research</td>
                                         <td>Rs.50</td>
                                         <td>2</td>
                                         <td className="bill_input"><input size="small"/></td>
-                                        <td>Rs.100</td>
+                                        <td>3</td>
+                                        <td>Rs.500</td>
                                         </tr>
                                     </tbody>
                                 </table>

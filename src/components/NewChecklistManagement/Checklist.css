@@ -67,3 +67,7 @@
 .checklist_value_padd{
     margin-top: 10px;
 }
+.checkmodal_align .ant-modal-content{
+    width: 130%;
+    margin-left: -76px;
+}

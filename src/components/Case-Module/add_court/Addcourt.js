@@ -301,7 +301,6 @@ class Addcourt extends React.Component{
                           value={this.state.addcourtdata.court_name.value} 
                           error={this.state.addcourtdata.court_name.error} 
                           errmsg={this.state.addcourtdata.court_name.errmsg}
-                          showSearch={true}
                           required/>
 
                         

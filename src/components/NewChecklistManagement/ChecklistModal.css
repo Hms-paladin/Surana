@@ -17,6 +17,7 @@ font-size: 19px;
 .borderleft_checklistmanagement{
     border-left: 1px solid #DCD4D2;
     margin-left: -5px !important;
+    padding-left: 20px;
   }
 
 .font_bold .MuiTypography-body1{

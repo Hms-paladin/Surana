@@ -6,6 +6,10 @@ import Button from 'react-bootstrap/Button';
 import Dropdownantd from "../../../formcomponent/dropdownantd";
 import Calenderbox from '../../../formcomponent/calenderbox';
 import ValidationLibrary from "../../../validationlibrary/validation";
+import BillableDetails from "../../effortInvoice_Module/BillableDetails/billableeffort_details";
+import External_Consultant from "../../effortInvoice_Module/ExternalConsultant/external_consultant";
+import OpeDetails from "../../effortInvoice_Module/OPeDetails/opeDetails";
+import SummaryDetails from "../../effortInvoice_Module/SummaryDetails/summary_details";
 
 
 class InvoiceDetails extends React.Component{
@@ -125,19 +129,8 @@ class InvoiceDetails extends React.Component{
             <React.Fragment>
               <div className ="card mt-5">
                     <div className ="card-body">
-                        <p style={{textAlign:'end'}}> Invoice</p>
     {/* Invoice Headings */}
-                        <Grid item md={12} sm={12} className ="checklist_heading_div d-flex" >
-                            <div className ="plus_heading_div">
-                                <div>
-                                    <h6 className ="checklist_heading">Invoice Details</h6>
-                                </div>
-                                <div className ="plus_icon_checklist">
-                                    <Icon type ="plus" />
-                                </div>
-                            </div>
-                        </Grid>
-  
+               
                         <Grid item md={12} sm={12} className ="add_checklist_heading_div">
                             <h6 className ="checklist_heading">Add Invoice Details</h6>
                         </Grid>
@@ -148,7 +141,7 @@ class InvoiceDetails extends React.Component{
                                 <Grid container>
                                     <Grid md={11} sm={12}>
                                         <Grid container spacing ={2}>
-                                            <Grid item md={8} sm={5}>
+                                            <Grid item md={4} sm={5}>
                                                 <Inputantd label ="Client Name" className="w-100" 
                                                   changeData={(data)=>this.changeDynamic(data,'clinet_name')} 
                                                   value={this.state.InvoiceData.clinet_name.value} 
@@ -157,9 +150,6 @@ class InvoiceDetails extends React.Component{
                                                   />
                                             </Grid>
                                             <Grid item md={4} sm={5}>
-                                                <Calenderbox label="Date" className="w-100" />
-                                            </Grid>
-                                            <Grid item md={8} sm={5}>
                                                 <Dropdownantd label ="Project Name" className="w-100" 
                                                   changeData={(data)=>this.changeDynamic(data,'Project_name')} 
                                                   value={this.state.InvoiceData.Project_name.value} 
@@ -168,24 +158,24 @@ class InvoiceDetails extends React.Component{
                                                   />
                                             </Grid> 
                                             <Grid item md={4} sm={5}>
-                                                <Dropdownantd label="Total hrs" className="w-100" />
+                                                <Calenderbox label="Date" className="w-100" />
                                             </Grid>
-                                            <Grid item md={4} sm={5}>
-                                                <Calenderbox label="From Date" className="w-100" />
-                                            </Grid>  <Grid item md={4} sm={5}>
-                                                <Calenderbox label="To Date" className="w-100" />
+                                          
+                                            <Grid item md={1} sm={5} style={{display:'flex', fontSize:'17px', marginTop:'4px'}}>Peroid </Grid>
+                                            <Grid item md={2} sm={5} >
+                                                <Calenderbox placeholder="From Date" className="w-100" />
+                                            </Grid> 
+                                             <Grid item md={2} sm={5}>
+                                                <Calenderbox placeholder="To Date" className="w-100" />
                                             </Grid>
                                          
                                             </Grid>  
                                         </Grid>
-                                     
                                     </Grid>
-
-                                 
                             </div>
                         </div>
      {/*Save and Cancel Button */}
-                        <Grid container direction="row" justify="center" alignItems="center" className="mt-5" spacing={3}>
+                        <Grid container direction="row" justify="center" alignItems="center" className="mt-1" spacing={3}>
                             <Grid item >
                                 <Button className="btnwidth btnclr" onClick={() => this.checkValidation()}>Generate</Button>
                             </Grid>
@@ -194,6 +184,13 @@ class InvoiceDetails extends React.Component{
                               <Button className="btnwidth btnclr_outline">Cancel</Button>
                             </Grid>
                         </Grid>
+                        <div className="card gtrtgtrgt">
+                          <BillableDetails/>
+                          <External_Consultant/>
+                          <OpeDetails/>
+                          <SummaryDetails/>
+
+                        </div>
                     </div>
                 </div>
             </React.Fragment>

@@ -11,7 +11,7 @@ class ManagingPartner extends React.Component{
       <CenteredTabs
       tabonelabel="Appraisal Rating"
       tabtwolabel="Appraisal"
-      tabthreelabel="HRD Review"
+      tabthreelabel="HOD Review"
       componentone={<ManagingRating/>}
       componenttwo={<ManagingAppraisal/>}
       componentthree={<ManagingReview/>}

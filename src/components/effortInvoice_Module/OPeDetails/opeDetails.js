@@ -18,7 +18,7 @@ class OpeDetails extends React.Component{
           {
               index:3,
               heading:"OPE",
-              Table:["Expense", "Date", "Resource", "Billable","Amount"]
+              Table:[ "Date",  "Expense","Resource", "Billable","Amount(Rs)"]
           },
         ]
       }
@@ -27,7 +27,7 @@ class OpeDetails extends React.Component{
         return(
           <React.Fragment>
                  <div className ="grid_alignment_checklist_billable">
-                    <div className ="checklist_activity_border">
+                    <div className ="checklist_activity_border_bilable">
            {/* heading */}
                       <div className ="avtivity_background">
                         <p className ="top_checklist">OPE</p>
@@ -37,6 +37,7 @@ class OpeDetails extends React.Component{
                          <table className="ope_table">
                              <thead>
                                 <tr>
+                                <th scope="col">Billed</th>
                                  <th scope="col"><Checkbox></Checkbox></th>
                                  {this.state.OpeArrays[2].Table.map((externalData)=>{
                                          return(
@@ -49,19 +50,20 @@ class OpeDetails extends React.Component{
                                 </tr>
                              </thead>
                               <tbody>
-                                 <tr>
-                                     <th scope="row"><Checkbox></Checkbox></th>
-                                     <td>Prepare Legal Papers</td>
-                                     <td>21/05/2019</td>
+                                  <tr className="table_billable">
+                                    <th scope="row"></th>
+                                     <th><Checkbox></Checkbox></th>
+                                     <td>26/05/2019</td>
+                                     <td>Documentation</td>
                                      <td>Personnel</td>
                                      <td>Rs.50</td>
                                      <td>2</td>
-
-                                 </tr>
-                                 <tr>
-                                     <th scope="row"><Checkbox></Checkbox></th>
-                                     <td>Documentation</td>
+                                  </tr>
+                                 <tr className="table_billable">
+                                     <th scope="row"></th>
+                                     <th><Checkbox></Checkbox></th>
                                      <td>26/05/2019</td>
+                                     <td>Documentation</td>
                                      <td>Personnel</td>
                                      <td>Rs.50</td>
                                      <td>2</td>

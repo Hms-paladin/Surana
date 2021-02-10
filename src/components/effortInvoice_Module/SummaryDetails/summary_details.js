@@ -48,7 +48,7 @@ const columns = [
         return(
            <React.Fragment>
                     <div className ="grid_alignment_checklist_billable">
-                         <div className ="checklist_activity_border">
+                         <div className ="checklist_activity_border_bilable">
            {/* Summary heading */}
                             <div className ="avtivity_background">
                                <p className ="top_checklist">Summary</p>
@@ -69,7 +69,7 @@ const columns = [
                           </Grid> 
                             </div>  
                             <div className ="grid_alignment_checklist_sum">
-                            <table >
+                            <table className="dd">
                                 <thead>
                                     <tr> 
                                        <>
@@ -91,7 +91,7 @@ const columns = [
                             </table>
                             </div>
          {/* Save Button */}
-                            <Grid container direction="row" justify="center" alignItems="center" className="mt-3" spacing={3}>
+                            <Grid container direction="row" justify="center" alignItems="center" className="mt-1" spacing={3}>
                             <Grid item >
                                 <Button className="btnwidth btnclr">Save</Button>
                             </Grid>
