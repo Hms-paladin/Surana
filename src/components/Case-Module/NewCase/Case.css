@@ -1,0 +1,343 @@
+
+.human-move{
+    display: flex;
+    justify-content: flex-end;
+    color: grey;
+    font-size: 14px;
+}
+.margin-spacing{
+    margin-top: 39px;
+    margin-left: 29px;
+}
+.question-move{
+    /* width: 118%; */
+    resize: none;
+    height: 96px !important;
+}
+.answers {
+    height: 38px !important;
+    margin-left: 35%;
+    width: 100%;
+}
+.case .MuiOutlinedInput-root{
+height: 40px;
+}
+.answer-options{
+    height: 38px;
+    font-size: 15px;
+    width: 122%;
+}
+.category{
+    color: grey;
+}
+.response{
+    margin-left: -20px;
+    width: 101%;
+}
+
+.caseListSearch{
+    display: inline-flex !important;
+    position: absolute;
+    top: 29px;
+    right: 31px;
+    font-size: 30px !important;
+    fill: #46469b !important;
+    z-index: 99999 !important;
+
+}
+.caseListSearchCase{
+    display: flex !important;
+    position: absolute;
+    top: 29px;
+    right: 31px;
+    font-size: 30px !important;
+    fill: #46469b !important;
+    z-index: 99999 !important;
+
+}
+.case_Search button{
+    margin: 0px !important;
+    background-color: #46469b !important;
+    border-color: #46469b !important;
+}
+.case_addicon{
+    fill: #46469b !important;
+    font-size: 30px !important;
+    margin-left: 10px !important;
+}
+
+@media (min-width: 600px){
+.answercase.MuiGrid-grid-sm-5 {
+    margin-right: 38px;
+    margin-left: -14px;
+
+}
+}
+@media (min-width: 900px){
+    .answercase.MuiGrid-grid-sm-5 {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    }
+.radio-adjust{
+        margin-right: 1%;
+    }
+    /* ----------------------------------Casedetails----------------syed------------------------------------------ */
+    .casedetails_heading{
+        color: #46469b;
+    }
+    .casedetail_main{
+        display: flex;
+        font-size: 20px; 
+    }
+    .casedet_border{
+        border-right: 1px dashed grey;
+    }
+    @media (max-width:768px){
+        .casedet_border{
+            border-top: 1px dashed grey;
+            border-right: none;
+        }
+        .casedetails_modal{
+            width: 550px !important;
+            margin-right: 23%;
+        }
+    }
+    .casedetail_option{
+        font-size: 14px; 
+    }
+    .option_type{
+        display: flex;
+        padding: 10px;
+    }
+    .suboption{
+        color: #46469b;
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .subreply{
+        width: 50%;
+    }
+    .subreply_link{
+        color: #0087ff;
+        cursor: pointer;
+        text-decoration: underline;
+        /* width: 50%; */
+        /* border:1px solid #cccccc; */
+        /* height: 100px; */
+        /* overflow: auto; */
+    }
+    .subreply_dra{
+        width: 50%;
+        cursor: pointer;
+        color: #0087ff;
+        text-decoration: underline;
+    }
+    .casedetails_modal{
+        width: 550px !important;
+        margin-top: 4%;
+    }
+    .casedetails_modal .ant-modal-content{
+        overflow: scroll;
+
+    }
+
+    .subreply_details{
+        width: 50%;
+        border:1px solid #cccccc;
+        height: 100px;
+        overflow: auto;
+    }
+    .Notification_Case{
+        top:80px !important;
+    }
+    /* ----------------------------------Casedetails----------------syed------------------------------------------ */
+/* ---------------------------------------oppositepartymodal-------------syed------------------------------ */
+.opposite_title{
+    color: #46469b;
+
+}
+.oppositemodal_option{
+    font-size: 18px; 
+    color: #46469b;
+
+}
+.oppositemodal_type{
+    display: flex;
+    padding: 10px;
+}
+.opposite_suboption{
+    /* color: #46469b; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.opposite_subreply{
+    width: 50%;
+}
+/* ---------------------------------------oppositepartymodal-------------syed------------------------------ */
+/* ---------------------------------------counselpartymodal-------------syed------------------------------ */
+.counsel_title{
+    color: #46469b;
+
+}
+.counselmodal_option{
+    font-size: 18px; 
+    color: #46469b;
+
+}
+.counselmodal_type{
+    display: flex;
+    padding: 10px;
+}
+.counsel_suboption{
+    /* color: #46469b; */
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.counsel_subreply{
+    width: 50%;
+}
+
+/* ---------------------------------------counselpartymodal-------------syed------------------------------ */
+/* -------------------------------------------------DRAhistorymodal----------------------syed------------------- */
+.table_head{
+    font-weight: bold !important;
+}
+.dra_table{
+    overflow: scroll;
+}
+.dra_history_heading{
+    color: #46469b;
+}
+.emp_table_name_div{
+    padding: 13px;
+}
+.emp_table_name_div .MuiTableCell-sizeSmall{
+    padding: 20px 24px 6px 16px;
+  
+}
+
+/* -------------------------------------------------DRAhistorymodal----------------------syed------------------- */
+.addinterim_plusicon{
+    margin-left: 12px;
+    margin-top: 10px;
+}
+.addinterim_plusicon svg{
+    color: #46469b;
+}
+
+@media only screen and (max-width: 1024px) {
+    .case_card_responsive .heading_left{
+        width: 136% !important;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+    .caselist_modal_width.ant-modal{
+     margin-left: 0px !important;
+}
+}
+
+.caselist_modal_width.ant-modal{
+    width: 819px !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .ant-modal-content{
+        width: 72% !important;
+}
+}
+
+/* Case Insustry */
+
+.overall_modal_edit .ant-modal-content{
+    width: 56% !important;
+    border-radius: 0px!important;
+    text-align: center;
+    margin-left: 30%;
+}
+.overall_modal_edit .ant-modal-body{
+    margin-top: 46%;
+}
+.overall_modal_edit .ant-modal-close-x{
+    display: none;
+}
+.button_dialog_edit{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.ok_edit{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 7px;
+    background-color: red;
+    color: white;
+}
+ .ok_edit.btn-primary{
+    border-color: white;
+}
+.check_btn_div
+{
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 5%;
+}
+.dddsssss{
+
+    color: white !important;
+    background-color: #46469B !important;
+    border-color: #46469B !important;
+    border-radius: 2px;
+    width: 120px;
+    height: 40px;
+
+}
+/* saran */
+.case-details{
+    color: #46469b;
+    font-size: 13.5px;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+.ant-modal-wrap .simple_class{
+    width: 1200px !important;
+}
+.case_type{
+    display: flex;
+    flex-direction: column;
+}
+.wrapDra{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapDra2{
+    display: flex;
+    justify-content: space-between;
+}
+.caseaddform{
+    margin-bottom: 14px !important;
+}
+.courtdropdowns{
+    width: 100%;
+}
+.courtdropdowns_2{
+    width: 80% !important;
+}
+.court_divider{
+    border-bottom: 2px solid #A2A2CC;
+    margin-top: 50px;
+}
+
+.adding_case{
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.ad_details_adjust{
+    margin-top: -17px !important;
+}
+ 

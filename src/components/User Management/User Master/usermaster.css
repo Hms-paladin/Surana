@@ -1,0 +1,30 @@
+.usergrp_addicon {
+    position: absolute;
+    top: 97px;
+    right: 36px;
+    font-size: 30px !important;
+    fill: #46469b !important;
+    z-index: 9999 !important;
+    cursor: pointer;
+}
+
+.status_usermaster_active {
+    font-size: 14px !important;
+    border-radius: 3px !important;
+    height: 25px !important;
+    background-color: #E6EFD8 !important;
+    color: #82AE3F !important;
+    width: 88px;
+    border-color: #82AE3F !important;
+}
+
+.status_usermaster_inactive {
+    font-size: 14px !important;
+    border-radius: 3px !important;
+    height: 25px !important;
+    width: 88px;
+    color: #ee534f !important;
+    border-color: #ee534f !important;
+    background-color: #f9bebe !important;
+}
+

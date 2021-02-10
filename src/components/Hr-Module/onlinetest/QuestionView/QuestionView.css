@@ -1,0 +1,42 @@
+.question_icon1{
+    fill: #46469b !important;
+    /* margin-right: 8px; */
+}
+.question_icon{
+    fill: #46469b !important;
+}
+.question_wrap{
+    margin-top: 10px !important;
+    white-space: break-spaces;
+}
+.question_border{
+    border-bottom: 1px solid darkgrey !important;
+}
+.question_main{
+    margin: 20px;
+}
+.question_viewmain
+{
+    box-shadow: 0px 0px 7px 6px lightgrey !important;
+}
+/* deletemodel css */
+
+.ant-modal.delmodelwidth{
+    width: 38% !important;
+    top: 180px;
+}
+.main_wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.wrapping_icons{
+    text-align: right;
+    /* width: 85%; */
+}
+
+.textcontainermodel{
+    /* min-height:350px; */
+    max-height: 350px;
+    overflow-y:scroll ;
+}

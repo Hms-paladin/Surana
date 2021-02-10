@@ -1,0 +1,533 @@
+.timesheetinput_main{
+    height: 55px;
+    border-radius: 0px;
+    margin-top: -10px;
+    width:190px !important;
+}
+.timesheetinput_main input{
+    padding: 4px 6px !important;
+}
+.timesh_br .ant-select-selection{
+    border-radius: 0px;
+}
+.ope_btn{
+    height: 32px;
+    border-radius: 3px;
+    line-height: 1.3;
+    margin-right: 0px !important;
+}
+
+.timesh_font_entry{
+    display: none !important;
+}
+.tmiesh_jus_spabt{
+    justify-content: space-between;
+    /* margin-left: 45%; */
+}
+.timesh_jus_cen{
+    justify-content: center;
+}
+.timesh_jus_spaar{
+    justify-content: space-around;
+}
+.timesh_br_left{
+    border-left: 3px solid #DCD4D2;
+}
+.timesh_br_right{
+    border-right: 3px solid #DCD4D2;
+}
+.timesh_num_ft{
+    font-size: 23px;
+    margin-top: 19px;
+    width: 95px;
+    /* margin-left: 30%; */
+}
+.secs_left{
+    margin-left: 3%;
+}
+.playbtn{
+    height: 39px;
+    border-radius: 2px;
+    background-color: #46469B;
+    border-color: #46469B;
+}
+.playbtn:hover{
+background-color: midnightblue;
+border-color: midnightblue;
+}
+.pausebtn{
+    height: 39px;
+    border-radius: 2px;
+    background-color: #DC3545;
+    border-color: #DC3545;
+}
+.pausebtn:hover{
+background-color: #C82333;
+border-color:#bd2130;
+}
+.timesh_clock_align{
+font-size: 30px !important;
+margin-top: 21px !important;
+}
+/* .timesh_fabclock_align{
+width: 40px;
+height: 40px;
+margin-top: 13px !important;
+} */
+.line{
+    width: 45%;
+    display: inline-block;
+    /* background: red; */
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    line-height: 3em;
+}
+.scroll_right{
+        overflow-y: auto !important;
+        /* border: 1px solid red  !important; */
+        /* width:500px  !important; */
+        height:200px  !important;
+        /* position:'relative'; */
+}
+.task_width{
+    width: 55%;
+}
+.shell{
+    border: 1px solid #aaa;
+    border-radius: 13px;
+    margin-bottom: 10px;
+    margin-top: 15%;
+    width: inherit;
+}
+.shell_width{
+    width: 90%;
+    margin: 0 auto;
+}
+.bar {
+    background:#46469B;;
+    height: 20px;
+    width: 15px;
+    border-radius: 9px;
+}
+.bar span {
+    float: right;
+    padding: 4px;
+    color: #fff;
+    font-size: 0.7em
+  }
+  button {
+    margin: 10px;
+    border: 1px solid #aaa;
+    background: none;
+    border-radius: 50%;
+    padding: 4px 8px;
+    outline: none;
+    cursor: pointer;
+  }
+  /* .progress_bar{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
+  /* } */
+  /* ope */
+  .timeicon{
+    font-size: 20px;
+}
+.opecheck{
+    display: contents;
+}
+.opeattach{
+    width: 35px;
+    height: 70px;
+    margin-top: -71px !important;
+    margin-left: 129px !important;
+}
+.font_patent{
+    font-size: large;
+}
+.hoverr:hover{
+    background-color:#A0C5E8;
+}
+.card_task{
+    margin-left: 14%;
+    margin-right: 18%;
+    margin-top: 10%;
+}
+.padding_top{
+    padding: 10px 0 0 0 ;
+}
+.hoverr{
+    line-height: 1.8 !important;
+    padding: 5px;
+}
+.icon_visible  .ant-modal-close-x{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 20;
+        padding: 0;
+        color: rgba(255,255,255,0.45);
+        font-weight: 700;
+        line-height: 1;
+        text-decoration: none;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        transition: color .3s;
+}
+/* -------------------------syed--------------------------- */
+.timesheet_tabledata_one{
+    font-size: 16px !important;
+    text-align: left !important;
+}
+.timesheet_tabledata_two{
+    font-size: 16px !important;
+    color: #46469B !important;
+    text-align: left !important;
+}
+.timesheet_tabledata_three{
+    font-size: 16px !important;
+    color: #d22222 !important;
+    text-align: left !important;
+}
+.timesheet_tabledata_four{
+    text-align: center !important;
+}
+.timesheet_tabledata_btn{
+    width: 130px;
+}
+.timesheet_linkIcon{
+    fill: #46469B;
+    font-size: 13px !important;
+}
+.timesheet_editimg
+{
+    width: 27px !important;
+    height: 70px  !important;
+    float: right  !important;
+    margin-right: 20px  !important;
+}
+.timesheet_pinIcon{
+    width: 27px  !important;
+    height: 19px  !important;
+    margin-right: 10px  !important;
+    color: orangered;
+   
+}
+.timesheet_griddata{
+    border-left: 2px solid #DCD4D2;
+    font-size: 15px !important;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+}
+.timesheet_griddataplayaicons{
+    font-size: 30px !important;
+}
+.timesheet_griddatamoreicons{
+    font-size: 30px !important;
+}
+.timesheet_headingbg{
+    background-color:  #CDCDFC;
+    height: 60px  !important;
+    margin-top: 20px  !important;
+}
+.timesheet_headingdata{
+    padding: 20px  !important;
+}
+@media (max-width:768px){
+    .timesheet_tablescroll{
+        overflow-x: auto  !important;
+    }    
+    .timesheet_gridcontainer{
+        width: 400px  !important;
+    }
+    .timesheet_card{
+        width: 100% !important;
+    }
+}
+@media (max-width:1024px){
+    .timesheet_tablescroll{
+        overflow-x: auto  !important;
+    }
+    .timesheet_gridcontainer{
+        width: 400px  !important;
+    }
+    .timesheet_gridalign{
+        width: 400px  !important;
+    }
+    .timesheet_gridwidth{
+        width: 150% !important;
+    }
+    .timesheet_card{
+        width: 100% !important;
+        overflow-x: auto  !important;
+    }  
+    .timesheet_clkalign{
+        margin-left: 5% !important;
+    }  
+}
+.ant-modal-content .specific_modal{
+    width: 50% !important;
+    margin-top: 15%  !important;
+    margin-left: 26%  !important;
+}
+​
+.timesheet_btnmain{
+    display: flex  !important;
+    /* margin-top: 20px  !important; */
+}
+.timesheet_clkalign{
+    margin-top: 7px !important;
+}
+
+.timesheet_btnmain .btn-danger{
+    display: inline !important;
+}
+.timesheet_btnmain{
+    width: 250px !important;
+    margin-top: 15px !important;
+}
+.timesheet_assign .btn-danger{
+    display: inline !important;
+}
+.timesheet_tabledata_btn-change{
+    width: 130px;
+    background-color: #1ec6cee0;
+    border-color: white;
+}
+.ope_btn-hearing{
+    height: 32px;
+    border-radius: 3px;
+    line-height: 1.3;
+    margin-right: 0px !important;
+    background-color: #2e2cad !important;
+    border-color: white;
+}
+.ope_btn-OPE{
+    height: 32px;
+    border-radius: 3px;
+    line-height: 1.3;
+    margin-right: 0px !important;
+    background-color: #d86772ab !important;
+    border-color: white;
+}
+.ope_btn-success{
+    height: 32px;
+    border-radius: 3px;
+    line-height: 1.3;
+    margin-right: 0px !important;
+    background-color: #54ce70fc !important;
+    border-color: white;
+}
+.hearingModal{
+    top: 62px !important;
+}
+.flt_btn{
+    float: right !important;
+}
+.flt_btn-color{
+color: #fff;
+    background-color: #f3b52a;
+    border-color:white;
+    border-radius: 2px;
+    width: 84px;
+    height: 33px;
+}
+
+.opemodal_uploadinput{
+    margin-top: 11px !important;
+}
+.opeModal_uploadMain{
+    min-height: 50px !important;
+}
+.opeModal_checkbox{
+    position: fixed !important;
+}
+.opemodal_uploadcontents .ant-upload.ant-upload-select{
+    bottom: 28px !important;
+    left: 45px !important;
+}
+.opemodal_uploadcontents .ant-upload-list{
+    margin-top: -25px !important;
+}
+.time_sheet-label{
+padding: 16px;
+margin: 0;
+color: #fff;
+font-size: 16px;
+}
+.background_clr{
+background: #46469b;
+}
+
+.bill_top{
+    margin-top: 12% !important;
+    font-size: 18px;
+}
+.text-center_ope{
+text-align: center!important;
+color: #524ca9;
+}
+.text-center_amt{
+    text-align: center!important;
+        color: #7fe7ff;
+    }
+    .date_dist{
+        margin-top: -5px;
+        display: inline-flex;
+    }
+    .upper_case{
+        text-transform: none !important;
+    }
+    .hearing_date{
+        position: absolute;
+        top: 98px;
+        right: 137px;
+    }
+
+    /* status saran */
+    .percentage_move{
+        display: flex;
+        justify-content: space-around;
+    }
+    .input-range__slider{
+        width: 80% !important;
+        margin-left: 28px;
+        background: #46469b;
+        color: #46469b;
+    }
+    .card_status{
+        margin-left: 14%;
+        margin-right: 18%;
+        margin-top: 10%;
+        width: 80% !important;
+        height: 45%;
+        border-radius: 10px;
+    }
+    .percent_field{
+        margin-left: 70%
+    }
+    .date_timetable{
+        width: 36px;
+    }
+    .timetable_picker input{
+        border:none !important;
+    }
+
+    .timetable_picker i{
+        font-size: 22px;
+        color: unset !important;
+        cursor: pointer;
+        top: 35% !important;
+    }
+    .notification_timesheet{
+        top: 68px;
+    }
+    /* status syed */
+    .status_calltask{
+        position: absolute !important;
+        top: 17px !important;
+        font-size: 17px !important;
+        left: 13px !important;
+    }
+
+    /* timesheet table */
+
+    /* .ant-popover{
+        left: 650px !important;
+        top: 260px !important;
+    }
+    .ant-popover-buttons{
+        margin-top: 35px !important;
+    }
+    .ant-popover-arrow{
+        display: none !important;
+    }
+    .ant-popover-inner-content{
+        height: 132px !important;
+    } */
+    .unsubmitcontainermodel{
+        /* min-height:350px; */
+        max-height: 350px;
+        overflow-y:scroll ;
+    }
+    .ant-modal.unsubmitmodelwidth{
+        width: 38% !important;
+        top: 180px;
+    }
+    .tagFalse{
+        color:disabled;
+        font-size: 32px !important;
+    }
+    .tagTrue{
+        font-size: 32px !important;
+        color: #f3b52a !important;
+    }
+    .pinTrue{
+        width: 27px  !important;
+        height: 19px  !important;
+        margin-right: 10px  !important;
+        fill: orangered !important;
+        
+    }
+    .pushpin_parent{
+      margin:0px !important;
+      display:inline-flex;
+    }
+
+    .material_icons_true{
+        transform: rotate(315deg);
+        color:orange !important;
+        margin:0px !important;
+        padding-right: 5px !important;
+    }
+
+    .material_icons_text{
+        margin:0px !important;
+    }
+    .material_icons_color{
+        transform: rotate(315deg);
+        color:grey !important;
+        margin:0px !important;
+        padding-right: 5px !important;  
+    }
+    .font-original{
+        font-size: 17px !important;
+        margin-left: 10px;
+    }
+    .top_move-time{
+        margin-top: 7px !important;
+    }
+    .scroll_entry{
+        height: 55vh;
+        overflow: auto;
+    }
+    .assign_drop{
+        float: right !important;
+        width: 12%;
+    }
+    .assign-top_drop{
+        margin-top: -23px;
+    }
+    .ope-upload{
+        width: 127px;
+        margin-top: 16px;
+    }
+    .Upload_img{
+        width: 34px;
+    }
+    .display_align{
+        display: inline-flex;
+        align-items: center;
+    }
+    .right_remove .ant-upload{
+       right:unset !important; 
+    }

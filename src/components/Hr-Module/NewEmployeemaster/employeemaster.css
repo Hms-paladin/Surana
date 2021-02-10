@@ -1,0 +1,141 @@
+.empmaster_border{
+    border-bottom: dotted grey;
+    width: 100%;
+}
+.empPersonal_card{
+    width: 100%;
+    border: 1px solid #46469b;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+/* -----------------------------------table------------------- */
+
+.search_icon_parent .ant-input-search-icon{
+    color: #46469B !important;
+    
+}
+.icon_edit{
+    margin:4px;
+    color: #46469B;
+    font-size: 26px !important;
+    margin-left: 10px;
+}
+ 
+.empSearch_Main{
+    display: inline-flex;
+    position: absolute;
+    z-index: 1;
+    top: 43px;
+    right: 35px;
+}
+
+.spinner-center{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 140px;
+}
+
+@media (max-width:768px){
+    .empSearch_Main{
+        width: 200px;
+    }
+}
+
+
+.empTable_position{
+    position: relative;
+}
+
+.empmaster_tablemain{
+    position: relative;
+}
+.empmaster_search{
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    z-index: 100 !important;
+}
+.empmaster_search button{
+    margin: 0px !important;
+    cursor: auto;
+    background-color: #46469b !important;
+    border-color: #46469b !important;
+}
+.empmaster_addicon{
+    position: absolute;
+    top: 51px;
+    right: 23px;
+    font-size: 30px !important;
+    fill: #46469b !important;
+    z-index: 9999 !important;
+
+}
+.empmaster_tablesubmain{
+    display: inline-flex;
+}
+/* -------------------------------table---------------------- */
+
+/* ---------------------employee details------------------------- */
+
+@media (max-width:768px){
+    .Responsive_Tab{
+        flex: 0 0 100%;
+        max-width: 100%; 
+        margin-bottom:15px;
+    }
+}
+@media (max-width:1024px){
+    .Responsive_Ta{     
+    flex: 0 0 50% !important;
+        max-width: 50% !important; 
+    }
+}
+.modal_width.ant-modal { 
+    width: 70% !important;
+}
+.card_edit_empdetails{
+    min-height: 74vh;
+}
+ .modal_width .ant-modal-close{
+    display: none;
+}
+.head_edit{
+    display: flex;
+    justify-content: space-between;  
+    /* height: 35px; */
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    /* background-clip: border-box; */
+    border: 1px solid rgba(0,0,0,.125);    
+ }
+ .outside_cardshadow{
+    border: 1px  solid rgba(0,0,0,.125); 
+    box-shadow: 2px 2px 4px 5px  rgba(0,0,0,.125);
+    min-height: 60Vh !important;
+ }
+ .head_edit h5{
+     margin:0px !important;
+ }
+.both_card{
+    display: flex;
+}
+.personal_detail_par{
+    text-align: center;
+}
+.personal_textedit{
+    color: #46469B;
+}
+.first_row_edit{
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+}
+.first_row_edit span{
+    color: #46469B;
+}
+.overall_par{
+   padding: 15px;    
+}
+/* ---------------------employee details------------------------- */

@@ -1,0 +1,83 @@
+.check {
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 0px !important;
+}
+
+.buttondsign {
+    border-radius: 50px;
+    background: #46469B;
+    border-color: #46469B;
+    margin-top: 10px;
+    color: white;
+
+}
+
+.buttondsign .btn:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.btnwhite {
+    background: white !important;
+    color: black;
+}
+
+.candidatebutton {
+    background: #46469B;
+    color: white;
+    border-radius: 50px;
+    border-color: #46469B;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.candidatebtnwhite {
+    background: white !important;
+    color: black;
+    border-radius: 50px !important;
+    border-color: #46469B !important;
+    border: 2px solid;
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 15px;
+
+}
+
+.candidate-card-min-height {
+    min-height: 30vh;
+}
+
+.check-css {
+    float: right;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.checkvalues {
+    display: inline-block;
+    justify-content: center;
+}
+.searchbar_div{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+    .checkvalues div {
+        width: 30%;
+    }
+}
+
+/* -------------------------syed */
+.induct_cardheight{
+    min-height: 70vh;
+}

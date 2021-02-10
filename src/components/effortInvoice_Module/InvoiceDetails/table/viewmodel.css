@@ -1,0 +1,20 @@
+.nonebtnmodelknowledge .ant-btn:first-child{
+    display: none;
+}
+
+.textcontainermodel{
+    /* min-height:350px; */
+    max-height: 350px;
+    overflow-y:scroll ;
+    justify-content: center;
+    display: flex;
+}
+
+/* deletemodel css */
+
+.ant-modal.delmodelwidth{
+    width: 38% !important;
+    top: 180px;
+}
+
+

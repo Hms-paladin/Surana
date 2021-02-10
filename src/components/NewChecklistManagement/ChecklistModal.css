@@ -1,0 +1,28 @@
+/* .font_size_checklistmanagement  .MuiTypography-body1 {
+font-size: 19px;
+} */
+
+.dis_none{
+    display: none;
+}
+
+.checklist_ml .MuiFormControlLabel-label{
+    margin-left: -8px;
+}
+
+.checklist_ml{
+    margin-left: 28px;
+}
+
+.borderleft_checklistmanagement{
+    border-left: 1px solid #DCD4D2;
+    margin-left: -5px !important;
+  }
+
+.font_bold .MuiTypography-body1{
+    font-weight: bold;
+}
+
+.day_checkbox .MuiFormControlLabel-label {
+    font-weight: 400;
+}

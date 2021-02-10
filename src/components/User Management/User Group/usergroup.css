@@ -1,0 +1,11 @@
+
+
+.usergrp_addicon {
+    position: absolute;
+    top: 97px;
+    right: 36px;
+    font-size: 30px !important;
+    fill: #46469b !important;
+    z-index: 9999 !important;
+    cursor: pointer;
+}

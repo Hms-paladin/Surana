@@ -1,0 +1,21 @@
+.cand_search_invoice{
+    position: absolute;
+    top: 27px;
+    right: 100px;
+    z-index: 1;
+}
+.cand_search_invoice{
+    position: absolute;
+    top: 27px;
+    right: 23px;
+    z-index: 1;
+}
+.cand_search_invoice button{
+    margin: 0px !important;
+    /* cursor: auto; */
+
+}
+.cand_tablemain_invoice{
+        position: relative;
+    
+}

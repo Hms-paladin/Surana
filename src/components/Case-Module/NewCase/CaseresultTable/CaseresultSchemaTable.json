@@ -1,0 +1,45 @@
+{"fields":[
+    {
+      "key": "agendaID",
+      "alias": "Agenda ID",
+      "visible": false,
+      "queryValid": true
+    },
+    {
+      "key": "casetype",
+      "alias": "Case Type",
+      "visible": true,
+      "queryValid": true
+    },
+    {
+        "key": "clientname",
+        "alias": "Client Name",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "clientindustry",
+        "alias": "Client Industry",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "nexthearing",
+        "alias": "Next Hearing",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "casestatus",
+        "alias": "Case Status",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "result",
+        "alias": "Result",
+        "visible": true,
+        "queryValid": true
+      }
+
+    ],"table_name":"trn_agenda"}

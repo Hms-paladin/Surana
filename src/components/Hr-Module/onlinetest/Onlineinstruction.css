@@ -1,0 +1,43 @@
+.online_heading{
+    color: #46469b !important;
+    font-size: 20px;
+    height:35px !important;
+    text-align: center;
+}
+.contents{
+    font-size: 12px;
+}
+.half_heading{
+    text-align: left;
+    color: #46469b !important; 
+    margin-right: 5px;
+}
+.half_headingtest{
+    text-align: left;
+}
+.text_duration{
+    text-align: left;
+}
+.move_content{
+    float: right;
+}
+/* .ant-modal-footer{
+    visibility: hidden;
+} */
+.font_clr{
+    color:#46469b ;
+    margin-left: 10px;
+}
+.second_contents{
+    margin-left: 7px;
+}
+.crosshide .anticon svg{
+    display: none !important;
+}
+.question_text{
+    display: flex;
+    justify-content: space-between;
+}
+.ant-modal{
+    width: 770px !important;
+}

@@ -1,0 +1,58 @@
+{"fields":[
+          
+          {
+            "key": "agendaTitle",
+            "alias": "Employee",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "employeedesignation",
+            "alias": "Task",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "employeedesignation",
+            "alias": "Effort Hours",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "employeedesignation",
+            "alias": "Expected Date",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "employeedesignation",
+            "alias": "Priority",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "employeedesignation",
+            "alias": "%",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "Actions",
+            "alias": "Actions",
+            "visible": false,
+            "queryValid": false
+          },
+          {
+            "key": "client",
+            "alias": "client",
+            "visible": false,
+            "queryValid": false
+          },
+          {
+            "key": "ProCase",
+            "alias": "ProCase",
+            "visible": false,
+            "queryValid": false
+          }
+                   
+          ],"table_name":"trn_agenda"}

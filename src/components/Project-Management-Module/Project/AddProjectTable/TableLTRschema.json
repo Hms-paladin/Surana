@@ -1,0 +1,35 @@
+{"fields":[
+          {
+            "key": "project_name",
+            "alias": "Project Name",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "client",
+            "alias": "Client",
+            "visible": true,
+            "queryValid": true
+          },
+         
+          {
+            "key": "Date",
+            "alias": "Created Date ",
+            "visible": true,        
+            "queryValid": true
+          },      
+           
+          {
+            "key": "Actions",
+            "alias": "Work Done",
+            "visible": false,
+            "queryValid": false
+          },
+          {
+            "key": "Actions",
+            "alias": "Actions",
+            "visible": false,
+            "queryValid": false
+          }
+                   
+          ],"table_name":"trn_agenda"}

@@ -1,0 +1,26 @@
+{"fields":[
+          
+          {
+            "key": "agendaTitle",
+            "alias": "Name",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "employeedesignation",
+            "alias": "Department",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "Actions",
+            "alias": "Actions",
+            "visible": false,
+            "queryValid": false
+          },{
+            "key": "usertype",
+            "alias": " User Type ",
+            "visible": true,
+            "queryValid": true
+          }
+          ],"table_name":"trn_agenda"}

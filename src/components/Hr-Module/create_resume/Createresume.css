@@ -1,0 +1,340 @@
+.resume .MuiOutlinedInput-root {
+    position: relative;
+    height: 40px;
+}
+
+.shrinke .MuiInputLabel-formControl {
+    top: 7px !important;
+}
+
+.address .PrivateNotchedOutline-root-306 {
+    margin-bottom: -50px !important;
+}
+
+.customresize {
+    height: 100px !important;
+}
+
+.calender-profile-height .ant-calendar-picker-input {
+    height: 41px;
+}
+
+.avater .ant-upload.ant-upload-select {
+    margin-top: 0px !important;
+}
+
+.avater .ant-upload.ant-upload-select-picture-card {
+    height: 136px;
+    width: 136px;
+}
+
+.profile_margin{
+    margin-top: 15px !important;
+}
+
+/* .avater .ant-upload.ant-upload-select-picture-card > .ant-upload {
+  padding: 0px !important;
+} */
+/* experiance */
+.justify-sp-ar {
+    justify-content: space-between;
+}
+
+.addcircle_width {
+    font-size: 37px !important;
+    margin-top: -13px;
+}
+
+.btn-btm-clr {
+    border-bottom: 4px solid #3F51B5;
+}
+
+.btnstylers.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: #40A9FF;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.iconbtnright {
+    width: 125px;
+    height: 44px;
+    background-color:#46469B !important;
+    border-color: #8151C4
+}
+
+.iconbtnleft {
+    height: 44px;
+    background-color: #8151C4;
+    border-color: #8151C4
+}
+
+.summary-btn-align {
+    margin-top: 259px;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.experiance-btn-align {
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 25px;
+}
+
+.education-btn-align {
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 15px;
+}
+
+.skills-btn-align {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 30px;
+}
+
+.iconbtnright-preview {
+    width: 250px;
+    height: 44px;
+    background-color: #8151C4;
+    border-color: #8151C4
+}
+
+.iconbtnright:hover {
+    background-color: #8151C4;
+    border-color: #8151C4
+}
+
+.iconbtnleft:hover {
+    background-color: #8151C4;
+    border-color: #8151C4
+}
+
+.iconbtnright-preview:hover {
+    background-color: #8151C4;
+    border-color: #8151C4
+}
+
+.avaterheight {
+    margin-top: 32px !important;
+}
+
+.next_margin {
+    margin-left: auto !important;
+}
+
+.skillsbutton {
+    background: #46469B;
+    color: white;
+    border-radius: 50px;
+    border-color: #46469B;
+    margin-right: 10px;
+    width: 20%;
+    text-align: center;
+    border: 2px solid;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+.skillsbtnwhite {
+    background: white !important;
+    color: black;
+    border-radius: 50px !important;
+    border-color: #46469B !important;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 20%;
+    text-align: center;
+    border: 2px solid;
+    padding: 2px;
+}
+
+.skills-card-min-height {
+    min-height: 30vh;
+}
+
+.check-css {
+    float: right;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.skillcheck {
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkvalues {
+    display: inline-flex;
+    align-items: center;
+}
+
+.edu-save-btn {
+    margin-top: 26px;
+    margin-left: 17px;
+}
+
+.exp-save-btn{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.education_right_conent {
+    margin-left: 14px;
+}
+.edu-box{
+    width: 403px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.15);
+}
+.edu-card-btn{
+    float: right;
+}
+.education-pad{
+    margin-right: 0px;
+}
+.check-css-profile {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 12px;
+}
+@media (min-width: 960px) {
+    .responsibilities {
+        max-width: 99.666667% !important;
+    }
+
+    .sm_btn.MuiGrid-grid-sm-2 {
+        max-width: 16.666667% !important;
+    }
+
+    .resume .MuiGrid-grid-md-3 {
+        flex-grow: 0;
+        max-width: 25%;
+        flex-basis: 26%;
+        height: 90px;
+    }
+
+    .address.MuiGrid-grid-md-3 {
+        flex-grow: 0;
+        max-width: 25%;
+        flex-basis: 26%;
+        height: 140px;
+    }
+
+    .padml {
+        margin-left: 0% !important;
+    }
+}
+
+@media (min-width: 600px) {
+    .responsibilities {
+        max-width: 89% !important;
+    }
+
+    .sm_btn.MuiGrid-grid-sm-2 {
+        max-width: 9.666667% !important;
+    }
+
+    .profession.MuiGrid-grid-sm-2 {
+        flex-grow: 0;
+        max-width: 6.666667%;
+        flex-basis: 16.666667%;
+    }
+}
+
+
+/* neweducation */
+.education_box{
+    margin-top: 3%;
+    border: 1px solid #c2c2eb;
+    position: relative;
+    padding: 15px;
+}
+.addIconLicense{
+    margin-top: 35px;
+}
+.licenseCard {
+    overflow-y: scroll;
+    max-height: 65px;
+  }
+  .licensebodyData{
+    font-size: 20px;
+    margin-bottom: 0px !important;
+  }
+.education_btnbox{
+    /* border: 1px solid #46469b; */
+    border-radius: 3px;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background:rgb(245, 242, 242);
+    font-weight: bold;
+}
+.licence_top{
+    margin-top: -2% !important;
+}
+.prev_btn-right{
+    flex-flow: row-reverse;
+}
+
+.tag_item-edu{
+    width: 19.2vw;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 2px;
+}
+.licence_card-arrange{
+    width: 67% !important;
+    margin-top: 10px;
+}
+.license_box_values{
+    display: flex;
+    justify-content: space-between;
+}
+.license_box_values p{
+    margin: 0;
+}
+.license_icons{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Summary edit button*/
+.editbtn{
+    display: flex;
+    position: inherit;
+    height: 100%;
+    padding: 13px;
+}
+.educationEditBtn{
+    float: right;
+    padding: 10px;
+}
+
+/* Experience */
+.experienceEditBtn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillsEditBtn{
+    float: right;
+    padding: 10px;
+}
+.cursorEdit{
+    cursor: pointer;
+}

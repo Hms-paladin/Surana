@@ -1,0 +1,172 @@
+.plus-icon{
+    font-size: 240% !important;
+    position: relative;
+    top: 5%;
+}
+.browse-type{
+    margin-top: 2px;
+    border-radius: 0%;
+    background-color: #5FBD5F;
+    margin-left: 3% !important;
+}
+.document-border .MuiOutlinedInput-notchedOutline{
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+.letter-color{
+    color: white;
+}
+.browse-type:hover{
+    background-color:#5fbd5f ;
+}
+.tag-margin{
+    margin-top: -15px;
+}
+.icon_align{
+    display:flex;
+}
+.icon_height_Search{
+    font-size: 40px !important;
+    margin-top: 40px;
+}
+.description{
+    height: 72px !important;
+    /* width: 103%; */
+}
+@media (min-width: 960px){
+.description.MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 57.333333%;
+    flex-basis: 58.333333%;
+}
+}
+@media (min-width: 600px){
+.description.MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 89%;
+    flex-basis: 100%;
+}
+}
+.browse-height{
+    margin-top: 7% !important;
+}
+    .button-adjust {
+    /* margin-left: 11% !important; */
+    margin-top: 10% !important;
+    }
+    .dis_flex{
+        /* justify-content: space-around !important; */
+        display: flex !important;
+    }
+.updated_down{
+    margin-top: 23px;
+    margin-left: 55px;
+}
+
+/* .ant-upload.ant-upload-select{
+    position: relative;
+    right: 9px;
+    bottom: 10px;
+}
+
+.uploaddocknowledge button {
+    height: 37px;
+    border-radius: 2px;
+    width: 108%;
+} */
+.calendar_to-move{
+    margin-top: -8px !important;
+}
+
+.gridbtnalignknowledge{
+    margin-top: 27px !important;
+    margin-left: -32px !important;
+}
+
+
+/* 
+.fileupload button{
+    background-color: green !important;
+}
+.fileupload::-webkit-file-upload-button {
+    background:#68BB59;
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 1px;
+    cursor: pointer;
+    color: white;
+  } */
+  .hideFile {
+    display:none !important;
+}
+
+ .upload__container_advertise {
+    position: relative;
+    width: 75%;
+    border: 1px solid #ccc;
+    padding:5px;
+    border-radius:2px !important;
+    height: 33px;
+}
+.upload__container_advertise input::placeholder {
+    opacity: .5;
+}
+.upload__pics {
+    display: flex;
+    border: 1px solid black;
+    width: 76%;
+    height: 46%;
+    cursor: pointer;
+}
+.myimage_upload {
+    display:flex;
+}
+
+.upload__pics-- button {
+    height: 37px;
+    border-radius: 2px;
+    width: 108%;
+}
+
+.upload__pics--name {
+   
+    width:90%;
+    display:flex;
+    align-items: center;
+    /* margin-top: 5px; */
+    padding-top: 10px;
+}
+.html__input-box {
+    width: 86%;
+    font-size: 16px;
+    cursor: pointer;
+    height: 35px;
+}
+
+
+.html__input-box:focus {
+    outline:none !important;
+}
+.html__input {
+    width: 100%;
+    padding: 4px;
+    border: none;
+    outline: 0;
+    box-shadow: 0 0 1.5px 0px #ccc;
+    border: 1px solid #ccc;
+    border-radius: 2px !important;
+}
+.upload__container--btn {
+    position: absolute;
+    /* left: -30px; */
+    right: 52px;
+    top: 58px;
+    padding: 11px;
+    cursor: pointer;
+}
+  .button_browse{
+    height: 36px !important;
+    background: #68BB59;
+    border-radius: 0px;
+  }
+ 

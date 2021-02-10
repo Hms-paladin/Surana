@@ -1,0 +1,67 @@
+import React from 'react';
+import {IoIosAdd} from 'react-icons/io';
+import Grid from '@material-ui/core/Grid'
+import './interviewquestionstwo.css';
+// import {Icon} from 'antd';
+import AddBoxOutlinedIcon from '@material-ui/icons/AddBoxOutlined';
+// import Dropdownbox from './formcomponent/dropdowncomponent';
+import Dropdownantd from './formcomponent/dropdownantd';
+class  InterviewQuestionsTwo extends React.Component{
+    render(){
+        return(
+           < React.Fragment>
+              <div className="human-move mb-2">
+            Human Resource/Interview Questions
+        </div>
+        <div>
+                <div className="tag-line">
+    <h5 className="tag-content">Recruitment</h5>
+    <h4 className="tag-icon"><IoIosAdd /></h4>
+</div>
+<div className="tag-line">
+        <h5 className="tag-content">Allocation</h5>
+    </div>
+    <Grid container spacing={4} className="mt-4 ml-3">
+        
+        <div className="mt-4 ml-1">
+             Maximum Questions
+        </div>
+                  <Grid item md={4} sm={5}>
+                  <Dropdownantd placeholder={""} className={"w-25"} option={["1","2","3"]} />
+                                     </Grid>
+                 
+                  <div className="mt-4">
+                   Duration
+               </div>
+               <Grid item md={4} sm={4 }>
+               <Dropdownantd placeholder={""} className={"w-25"} option={["60 Mins","90 Mins","120 mins"]} />
+          </Grid >
+          <Grid md={1}> 
+            <label className="time-min mt-4 ">(in mins) </label>
+          </Grid>
+          <Grid item md={3} sm={5} className="">
+              <label className="cate-gory mt-2 ">Category</label>
+                    <Dropdownantd placeholder={"Crime"} className={"w-100 crime-move mt-2"} option={["General","Law"]} />
+                    </Grid>
+                    <Grid md={1}></Grid>
+            <Grid item md={3} sm={5} className="">
+                <label className="sub-catgory mt-2">Sub Category</label>
+                <Dropdownantd placeholder={"Class A"} className={"w-100  mt-2"} option={["Class B","Class C"]} />
+         </Grid>
+         <Grid md={1}></Grid>
+            <Grid item md={3} sm={5} className="">
+                <label className="nof-questions mt-2">No.of questions</label>
+                <Dropdownantd placeholder={"15"} className={"w-25  mt-2"} option={["13","14"]} />
+                
+         </Grid>
+         <Grid md={1} className="mt-4">
+         <AddBoxOutlinedIcon className="addbox mt-5"/>
+         </Grid>
+          </Grid>
+          
+           </div>
+           </ React.Fragment>
+        )
+    }
+} 
+export default InterviewQuestionsTwo;

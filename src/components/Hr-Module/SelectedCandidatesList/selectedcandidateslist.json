@@ -1,0 +1,27 @@
+{"fields":[
+    {
+      "key": "candidateList",
+        "alias": "Cadidate Name",
+        "visible": true,
+        "queryValid": true
+    },
+      {
+        "key": "designation",
+        "alias": "Designation",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "status",
+        "alias": "Status",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "date",
+        "alias": "Date",
+        "visible": true,
+        "queryValid": false
+      }
+               
+      ],"table_name":"trn_agenda"}

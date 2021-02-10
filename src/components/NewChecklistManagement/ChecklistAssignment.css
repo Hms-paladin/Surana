@@ -1,0 +1,27 @@
+.plus_icon_grid_assignment{
+    display: flex;
+    justify-content: flex-end;
+
+    align-items: flex-end;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+.plus_div_assignment{
+    width: 28px !important;
+    background-color: #46469B;
+    color: white;
+}
+ @media only screen and (max-width: 1024px){
+    .card_responsive{
+       width: 116%;
+}
+}
+
+@media only screen and (max-width: 768px){
+    .card_responsive{
+       width: 176%;
+}
+}
+.checklist_table{
+    margin-top: 30px;
+}

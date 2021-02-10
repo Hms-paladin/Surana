@@ -1,0 +1,127 @@
+.assign_btnbox{
+    /* border: 1px solid #46469b; */
+    border-radius: 3px;
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background: white;
+    font-weight: bold;
+    color: #46469b;
+}
+.assign_box{
+    margin-top: 5%;
+    border: 1px solid #c7c7e9;
+    position: relative;
+    padding: 15px;
+}
+@media (max-width:768px){
+    .assign_box{
+        margin-top: 30px;
+    }
+}
+.offer_tag{
+    height: 30%;
+    margin-top: 30px !important;
+
+}
+.task_addicon{
+    fill: #46469b !important;
+    font-size: 28px !important;
+    margin-top: 27px;
+}
+/* ----------------------View Assignment table--------------------- */
+/* .viewassign_table{
+    min-width: 650px;
+} */
+.assignmore_view{
+    cursor: pointer;
+    float: right;
+}
+.assignmore_icon{
+    font-size: 30px !important;
+}
+.viewassign_border{
+    margin-top: 5%;
+    border: 1px solid #c7c7e9;
+    position: relative;
+    padding: 15px;
+}
+.viewassign_heading{
+    border-radius: 3px;
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background: white;
+    font-weight: bold;
+    color: #46469b;
+}
+.viewassign_td{
+    font-size: 18px !important;
+}
+.viewassign_tdata{
+    font-size: 15px !important;
+
+}
+.viewassign_tdwidth{
+    width: 100px !important;
+}
+@media (max-width:768px){
+    .viewassign_tablemain{
+        overflow: auto;
+    }
+    .viewassign_tdwidth{
+        width: 100px !important;
+    }
+    .viewassign_table{
+        width: 200% !important;
+    }    
+    .viewassign_border{
+        /* overflow-x: auto; */
+        margin-top: 5%;
+        border: 1px solid #c7c7e9;
+        position: relative;
+        padding: 15px;
+    }
+    .viewassign_heading{
+        border-radius: 3px;
+        width: 180px;
+        height: 40px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        background: white;
+        font-weight: bold;
+        color: #46469b;
+    }
+}
+@media (max-width:1024px){
+    .viewassign_tablemain{
+        overflow: auto;
+    }
+    .viewassign_tdwidth{
+        width: 100px !important;
+    }
+}
+.viewassign_popupicons{
+    font-size: 20px !important;
+    margin-right: 5px;
+}
+.offer_adjust{
+    margin-top: 4% !important;
+}

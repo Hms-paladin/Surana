@@ -1,0 +1,51 @@
+{"fields":[
+    {
+      "key": "agendaID",
+      "alias": "Agenda ID",
+      "visible": false,
+      "queryValid": true
+    },
+    {
+    "key": "employee",
+    "alias": "Employee",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "client",
+    "alias": "Client ",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "project",
+    "alias": "Project",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "date",
+    "alias": "Date",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "actual",
+    "alias": "Actual Hours",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "working",
+    "alias": "Working Hours",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "amount",
+    "alias": "Amount",
+    "visible": true,
+    "queryValid": true
+}
+
+    ],"table_name":"trn_agenda"}

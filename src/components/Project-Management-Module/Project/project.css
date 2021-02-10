@@ -1,0 +1,34 @@
+.card_parent{
+    position: relative;
+    height: 143px;
+}
+.card_heading{
+    position: absolute;
+    background: white;
+    top: -18px;
+    margin-left: 15px;
+    color: #46469b;
+    font-weight: bold;
+    padding: 5px;
+}
+.project_protype{
+    padding: 20px;
+}
+.project_assignbutton{
+    width: 122px !important;
+    height: 37px !important;
+    margin-left: 0px !important;
+    margin-top: 29px !important;
+}
+.project_cardcontainer{
+    margin-top: 25px !important;
+}
+.project_checkbox{
+    margin-top: 25px !important;
+}
+.project_checkbox svg{
+    font-size: 27px !important;
+}
+.project_checkboxtitle{
+    margin-top: 34px !important;
+}

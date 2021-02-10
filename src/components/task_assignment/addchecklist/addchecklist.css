@@ -1,0 +1,14 @@
+
+.mt_checklist{
+    margin-top: 53px;
+    font-size: 16px;
+    width: 163px;
+}
+
+.task_font_checklist{
+    margin-left: 72px;
+    font-size: 19px;
+    margin-top: -13px;
+    width: 133px;
+    background-color: ghostwhite;
+}

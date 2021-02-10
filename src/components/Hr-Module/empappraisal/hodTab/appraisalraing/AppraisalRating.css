@@ -1,0 +1,50 @@
+.appRating_para{
+    height: 132px;
+    font-size: 16px;
+
+}
+@media (max-width:1024px){
+    .appRating_para{
+        height:150px;
+    }
+    }
+    @media (max-width:768px){
+        .appRating_para{
+            height:100px;
+        }
+        }
+ .appRating_btnbox_next{
+    border: 1px solid #46469b;
+    border-radius: 3px;
+    width: 295px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background: white;
+ }   
+ .appRating_box{
+    margin-top: 3%;
+    border: 1px solid #46469b;
+    position: relative;
+    padding: 15px;
+}
+.appRating_btnbox{
+    border: 1px solid #46469b;
+    border-radius: 3px;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background: white;
+    /* font-weight: bold; */
+}    

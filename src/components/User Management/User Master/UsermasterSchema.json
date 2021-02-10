@@ -1,0 +1,40 @@
+{"fields":[
+  {
+    "key": "username",
+    "alias": " User Name ",
+    "visible": true,
+    "queryValid": true
+  },
+  {
+    "key": "mobno",
+    "alias": " Mobile Number",
+    "visible": true,
+    "queryValid": true
+  },
+  {
+    "key": "mailid",
+    "alias": " E-mail Id ",
+    "visible": true,
+    "queryValid": true
+  },
+  {
+    "key": "usergroup",
+    "alias": "User Group ",
+    "visible": true,
+    "queryValid": true
+  },
+  {
+    "key": "status",
+    "alias": " Status ",
+    "visible": true,
+    "queryValid": true
+  },
+  {
+    "key": "action",
+    "alias": " Action ",
+    "visible": false,
+    "queryValid": true
+  }
+ 
+      
+    ],"table_name":"trn_agenda"}

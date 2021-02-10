@@ -1,0 +1,116 @@
+.heading_edit {
+    box-shadow: 0px 0px 7px 1px grey;
+    height: 35px;
+    padding: 5px;
+}
+
+.heading_edit h5 {
+    margin: 0px !important;
+}
+
+.icon_edit {
+    display: flex;
+    margin: 35px;
+    color: #46469B;
+    font-size: 26px !important;
+    margin-left: 10px;
+}
+
+.ant-table-thead>tr>th {
+    padding: 14px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    width: 145px;
+}
+
+.ant-table-tbody>tr>td {
+    padding: 10px !important;
+}
+
+/* @media only screen and (max-width: 768px) {
+    .card_responsive{
+        width: 112%;
+}
+  } */
+
+@media only screen and (max-width: 1024px) {
+    .card_responsive {
+        width: 150% !important;
+    }
+}
+
+.remainbefore_nowrap {
+    white-space: nowrap;
+    /* margin-right: 10px !important; */
+}
+
+.documentrequired_align {
+    display: flex;
+}
+
+.documentrequired_align .ant-upload.ant-upload-select {
+    margin-top: 8px;
+    right: 0px;
+}
+
+.documentrequired_align button {
+    height: 34px;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+.projecttemp_btnalign button{
+    height: 38px;
+    font-size: 13px;
+    margin: 10px 0px;
+    margin-left: 5px;
+}
+
+.projecttemp_btnalign .MuiGrid-root.MuiGrid-item{
+    padding: 10px 0px;
+    padding-left: 12px;
+}
+
+.projecttemp_btnalign .ant-upload-list {
+    position: relative;
+    left: -198px;
+}
+
+
+
+.documentrequired_align .btn-primary{
+    background-color: #46469b !important;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-top: 32px;
+    margin-left: 0px;
+    border-left: none;
+}
+
+.documentrequired_align .ant-input{
+    cursor: pointer;
+}
+
+.documentrequired_align .ant-upload-list{
+    width: 65%;
+}
+
+.projectTemplateview_container{
+    display: flex;
+    font-size: 15px;
+}
+
+.projectTemplateview_key{
+    margin-right: 15px;
+    color: #333;
+}
+
+.projectTemplateview_colon{
+    margin-right: 15px;
+}
+
+.ant-modal.templateView{
+    width: 28% !important;
+}
+  

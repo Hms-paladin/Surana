@@ -1,0 +1,62 @@
+{"fields":[
+          {
+            "key": "agendaID",
+            "alias": "Agenda ID",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "agendaTitle",
+            "alias": "Name",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "agendaDate",
+            "alias": "Agenda Date",
+            "visible": true,
+            "date":"true",
+            "format":"dd-mm-yyyy",
+            "queryValid": true
+          },
+          {
+            "key": "agendaFromTime",
+            "alias": "From Time",
+            "visible": false,
+            "date":true,
+            "format":"hh:MM:ss TT",
+            "queryValid": true
+          },
+          {
+            "key": "agendaToTime",
+            "alias": "To Time",
+            "visible": false,
+            "date":true,
+            "format":"hh:MM:ss TT",
+            "queryValid": true
+          },
+          {
+            "key": "mas_employee_empFirstName",
+            "alias": "Assigned To",
+            "visible": true,
+            "queryValid": false
+          },
+           {
+            "key": "empId",
+            "alias": "Assigned To",
+            "foreign_tbl": "mas_employee",
+            "foreign_fields": [
+            { "name": "empId", "alias": "value", "alias1": "empId" },
+            { "name": "empFirstName", "alias": "value1", "alias1": "empFirstName" }
+            ],
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "Actions",
+            "alias": "Actions",
+            "visible": false,
+            "queryValid": false
+          }
+                   
+          ],"table_name":"trn_agenda"}

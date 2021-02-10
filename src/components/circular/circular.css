@@ -1,0 +1,22 @@
+
+
+.icon_align{
+display: flex;
+justify-content: flex-end;
+top: -27px;
+position: relative;
+left: -6px;
+}
+.attachment_width{
+   margin-top: 30%;
+
+    display: none;
+}
+
+.attachment_margin .ant-upload.ant-upload-select{
+    margin-top: -8% !important;
+    width: 100%;
+}
+.details_width{
+    width: 150% !important;
+}

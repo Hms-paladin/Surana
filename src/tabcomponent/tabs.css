@@ -1,0 +1,7 @@
+.tab_align.MuiPaper-rounded {
+    margin-left: -24px;
+    z-index: 2;
+    margin-top: -12px;
+    width: calc(100% - -48px);
+    border-radius: 0;
+}

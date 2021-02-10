@@ -1,0 +1,43 @@
+.questionadd_icon{
+    margin-top: 60 !important;
+    margin-left: 10px !important;
+    width: 35px !important;
+    height: 35px !important;
+    color: red;
+
+}
+.add_btn_question{
+    margin-top: 63px;
+    height: 31px;
+    padding-top: 3px;
+    width: 70px;
+}
+.modal_questions{
+    /* background-color: red; */
+    max-width:  900px !important;
+}
+.ques_clr_table{
+   
+    background-color: #46469B;
+    color: white;
+}
+.modal_questions .ant-modal-content{
+    width: 126% !important;
+} 
+.sno{
+    color: red;
+
+}
+.ques_edit_icon{
+    margin: 10px;
+}
+
+.border__change {
+    border-color: red;
+}
+
+.dateRangeList{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 13px;
+}

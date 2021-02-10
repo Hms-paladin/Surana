@@ -1,0 +1,95 @@
+.plus_icon{
+    background: '#fff';
+    border-style: 'dashed'
+    }
+    .tag_item{
+        width: 19vw;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 23px;
+}
+.onclick_align{
+    margin-bottom: 30px;
+    height: 33px;
+}
+.tag-modify{
+    display: inline;
+}
+.tag-modify .ant-tag {
+    min-width: 6vw;
+    height: 31px;
+    text-align: center;
+    padding-top: 4px;
+    margin-bottom: 7px;
+}
+
+.tag_top{
+    display: inline;
+}
+.tag_top .ant-tag {
+    min-width: 16.5vw;
+    height: 35px;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 14px;
+    border-radius: 2px;
+    margin-top: 5px;
+}
+.tag_adjust{
+    margin-top: 5%;
+    margin-bottom: 12%;
+}
+
+/* Used in Resume - skill page */
+
+.tag_top_skill i.anticon.anticon-close {
+    float: right;
+    padding: 3px;
+    font-size: 15px !important;
+    margin-right: 13px;
+    font-weight: bold;
+}
+.tag_item i.anticon.anticon-plus{
+    margin-top: 2px;
+    padding: 8px;
+}
+
+.tag_item{
+    width: 16.5vw;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.tag_top_skill{
+    display: inline;
+}
+
+.tag_top_skill .ant-tag {
+    min-width: 16.5vw;
+    height: 5vh;
+    text-align: center;
+    padding: 8px;
+    margin: 20px;
+    font-size: 14px;
+    border-radius: 22px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.15);
+    border-color: #e6f7ff;
+}
+.form-subheading {
+    color: #46469B;
+    font-weight: 600;
+    margin-top: 14px;
+    margin-bottom: 0px;
+}
+
+.ant-tag svg{
+    position: relative;
+    bottom: 2px;
+    font-size: 14px;
+}

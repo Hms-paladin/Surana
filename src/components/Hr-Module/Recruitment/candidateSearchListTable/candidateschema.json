@@ -1,0 +1,46 @@
+{"fields":[
+  {
+    "key": "resume",
+      "alias": "Resume Id",
+      "visible": true,
+      "queryValid": true
+  },
+    {
+      "key": "name",
+      "alias": "Candidate Name",
+      "visible": true,
+      "queryValid": true
+    },
+    {
+      "key": "gender",
+      "alias": "Gender",
+      "visible": true,
+      "queryValid": false
+    },
+    {
+      "key": "age",
+      "alias": "Age",
+      "visible": true,
+      "queryValid": false
+    },
+    {
+        "key": "experience",
+        "alias": "Experience",
+        "visible": true,
+        "queryValid": false
+      },
+      {
+        "key": "department",
+        "alias": "Department",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "designation",
+        "alias": "Designation",
+        "visible": true,
+        "queryValid": false
+      }
+
+             
+    ],"table_name":"trn_agenda"}

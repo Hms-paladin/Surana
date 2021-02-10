@@ -1,0 +1,41 @@
+{
+    "fields": [
+        {
+            "key": "agendaID",
+            "alias": "Agenda ID",
+            "visible": false,
+            "queryValid": true
+        },
+        {
+            "key": "name",
+            "alias": "Name",
+            "visible": true,
+            "queryValid": true
+        },
+        {
+            "key": "department",
+            "alias": "Department",
+            "visible": true,
+            "queryValid": true
+        },        
+        {
+            "key": "last_entered",
+            "alias": "Last Entered",
+            "visible": true,
+            "queryValid": true
+        },
+        {
+            "key": "days",
+            "alias": "Days",
+            "visible": true,
+            "queryValid": true
+        },
+        {
+            "key": "unblock",
+            "alias": "Unblock",
+            "visible": true,
+            "queryValid": true
+        }
+    ],
+    "table_name": "trn_agenda"
+}

@@ -1,0 +1,39 @@
+{"fields":[
+          {
+            "key": "agendaID",
+            "alias": "Employee ID",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "agendaTitle",
+            "alias": "Employee Name",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "employeedesignation",
+            "alias": "Employee Designation",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "employeedepartment",
+            "alias": "Employee Department",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "status",
+            "alias": "Status",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "Actions",
+            "alias": "Actions",
+            "visible": false,
+            "queryValid": false
+          }
+                   
+          ],"table_name":"trn_agenda"}

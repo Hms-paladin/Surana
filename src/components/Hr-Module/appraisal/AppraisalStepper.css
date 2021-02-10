@@ -1,0 +1,131 @@
+.vertical_stepper .makeStyles-root-52{
+    width:25px !important;
+    height:25px !important;
+}
+.vertical_stepper .MuiStepConnector-vertical{
+    margin-left: 17px !important;
+}
+.vertical_stepper .MuiStepConnector-lineVertical{
+    border-left-width:2px !important;
+}
+.vertical_stepper .MuiStepLabel-label.MuiStepLabel-active{
+    color: #0000008a !important;
+}
+.vertical_stepper .MuiStepper-root{
+    display: flex;
+    padding: 10px 24px;
+}
+.vertical_stepper .MuiStepLabel-root{
+    height: 45px;
+}
+.vertical_stepper{
+    position: relative;
+}
+
+@media (max-width:768px){
+    .vertical_stepper .stepper_svg{
+        margin-left: 10%;
+    }
+    .vertical_stepper .stepper_svg_two{
+        margin-left: 10%;
+    }
+}
+.Stepper_align{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+}
+.Stepper_span{
+    width:4%;
+}
+.Stepper_align .Stepper_Icon_view{
+    display:none;
+}
+.MuiStep-completed .Stepper_Icon_view{
+    display:block !important;
+}
+
+.stepper_container{
+    display: flex;
+    width: 100%;
+}
+.appraisal_stepper{
+    width: 10%;
+}
+.appraisal_timecontent{
+    width: 90%;
+}
+.steeper_contnent_middle{
+    width: 72%;
+}
+.time_dates_align{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.actual_right{
+    margin-right: 9% !important;
+}
+  .appraisal_buttons_flex{
+      justify-content: space-between;
+  }
+  .btnwidth{
+    width: 107px !important;
+}
+.btnclr:hover{
+    background-color: midnightblue;
+}
+
+.btnclr_outline:hover{
+    background-color: midnightblue !important;
+}
+
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+.btnclr{
+    color: white !important;
+    background-color: #46469B !important;
+    border-color: #46469B !important;
+    border-radius:2px;
+    width: 105px;
+   height: 47px;
+}
+.yearly_btn{
+    background-color: #46469B !important;
+    color: white !important;
+    width: 105px;
+    height: 36px;
+    /* height: 0px ; */
+}
+.yearly_btn_bg{
+    background-color: white !important;
+    color: #46469B !important;
+    width: 105px;
+    height: 36px;
+    border-color: #46469B !important;
+    border-radius:2px !important;
+    border:1px solid !important;
+}
+
+.submit_info_appraisal{
+    display: flex;
+   justify-content: flex-end;
+}
+.icon_align_appraisal{
+    color:  #46469B;
+    font-size: 40px !important;
+    margin-right: 20px;
+}
+@media (min-width:768px){
+    .steeper_contnent_middle{
+       margin-left: 10% !important;
+    }
+}
+@media (min-width:1024px){
+    .steeper_contnent_middle{
+       margin-left: 3% !important;
+    }
+}

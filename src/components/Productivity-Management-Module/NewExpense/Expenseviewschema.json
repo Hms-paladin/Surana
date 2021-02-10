@@ -1,0 +1,33 @@
+{"fields":[
+    {
+      "key": "agendaID",
+      "alias": "Agenda ID",
+      "visible": false,
+      "queryValid": true
+    },
+    {
+      "key": "department",
+      "alias": "Department",
+      "visible": true,
+      "queryValid": true
+    },
+    {
+        "key": "name",
+        "alias": "Name",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "amount",
+        "alias": " Amount",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "createdate",
+        "alias": "Create Date",
+        "visible": true,
+        "queryValid": true
+      }
+    
+    ],"table_name":"trn_agenda"}

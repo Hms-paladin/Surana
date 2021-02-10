@@ -1,0 +1,40 @@
+.test{
+
+}
+.bookrequest{ 
+
+    padding-left: 50px;
+
+padding-right: 100px;
+
+
+padding-top: 90px; 
+
+
+}   
+
+.textLeft{
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+.bookrequest{ 
+
+    padding-left: 20px;
+
+padding-right: 20px;
+
+text-align: center;
+
+padding-top: 30px; 
+
+
+} 
+
+
+}
+
+
+
+

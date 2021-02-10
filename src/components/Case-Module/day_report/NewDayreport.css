@@ -1,0 +1,172 @@
+/* deletemodel css */
+
+.ant-modal.delmodelwidth{
+    width: 38% !important;
+    top: 180px;
+}
+.dayreport_dropdown{
+    margin-top: -10px;
+}
+.dayreport_caseno{
+    color: #280dab;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ /* ----------------------------------dayreportmodal----------------syed------------------------------------------ */
+ .dayreportmodal_heading{
+    color: #46469b;
+}
+.dayreportmodal_main{
+    display: flex;
+    font-size: 20px; 
+}
+.casedet_border{
+    border-right: 1px dashed grey;
+}
+@media (max-width:768px){
+    .casedet_border{
+        border-top: 1px dashed grey;
+        border-right: none;
+    }
+    .dayreportmodal_modal{
+        width: 760px  !important;
+        /* margin-right: 23%; */
+        margin-left: 16%;
+        margin-top: 10% !important;
+    }
+}
+.dayreportmodal_option{
+    font-size: 14px; 
+}
+.dayreportmodal_optiontype{
+    display: flex;
+    padding: 10px;
+}
+.dayreportmodal_suboption{
+    color: #46469b;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.dayreportmodal_subreply{
+    width: 50%;
+}
+.dayreportmodal_subreply_link{
+    color: #0087ff;
+    cursor: pointer;
+    text-decoration: underline;
+    width: 50%;
+    border:1px solid #cccccc;
+    height: 100px;
+    overflow: auto;
+}
+.dayreportmodal_subreply_dra{
+    width: 50%;
+    cursor: pointer;
+    color: #0087ff;
+    text-decoration: underline;
+}
+.dayreportmodal_modal{
+    width: 550px !important;
+    margin-top: 5%;
+}
+.dayreportmodal_modal .ant-modal-content{
+    overflow: scroll;
+
+}
+
+.dayreportmodal_subreply_details{
+    width: 50%;
+    border:1px solid #cccccc;
+    height: 100px;
+    overflow: auto;
+}
+/* ----------------------------------dayreportmodal----------------syed------------------------------------------ */
+/* ---------------------------------------oppositepartymodal-------------syed------------------------------ */
+.opposite_title{
+color: #46469b;
+
+}
+.oppositemodal_option{
+font-size: 18px; 
+color: #46469b;
+
+}
+.oppositemodal_type{
+display: flex;
+padding: 10px;
+}
+.opposite_dayreportmodal_suboption{
+/* color: #46469b; */
+width: 50%;
+display: flex;
+justify-content: space-between;
+}
+.opposite_dayreportmodal_subreply{
+width: 50%;
+}
+/* ---------------------------------------oppositepartymodal-------------syed------------------------------ */
+/* ---------------------------------------counselpartymodal-------------syed------------------------------ */
+.counsel_title{
+color: #46469b;
+
+}
+.counselmodal_option{
+font-size: 18px; 
+color: #46469b;
+
+}
+.counselmodal_type{
+display: flex;
+padding: 10px;
+}
+.counsel_dayreportmodal_suboption{
+/* color: #46469b; */
+width: 50%;
+display: flex;
+justify-content: space-between;
+}
+.counsel_dayreportmodal_subreply{
+width: 50%;
+}
+
+/* ---------------------------------------counselpartymodal-------------syed------------------------------ */
+/* -------------------------------------------------DRAhistorymodal----------------------syed------------------- */
+.table_head{
+font-weight: bold !important;
+}
+.dra_table{
+overflow: scroll;
+}
+/* -------------------------------------------------DRAhistorymodal----------------------syed------------------- */
+.addinterim_plusicon{
+margin-left: 12px;
+margin-top: 10px;
+}
+.addinterim_plusicon svg{
+color: #46469b;
+}
+
+@media only screen and (max-width: 1024px) {
+.case_card_responsive .heading_left{
+    width: 136% !important;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.dayreportmodal_width.ant-modal{
+ margin-left: 13% !important;
+}
+}
+
+.dayreportmodal_width.ant-modal{
+width: 819px !important;
+margin-top: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+.ant-modal-content{
+    width: 72% !important;
+}
+}

@@ -1,0 +1,23 @@
+.newExp_border{
+    position: relative;
+    border: 1px solid #46469b;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.newExp_heading
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.newExp_addicon{
+    font-size: 30px !important;
+}
+
+.education_card_new{
+    border: 1px solid #0000ff7a;
+    padding: 17px;
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+}

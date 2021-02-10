@@ -1,0 +1,15 @@
+.online__details {
+    /* display: flex;
+    align-items: center; */
+    height: 28vh;
+}
+
+.online__container {
+    display: flex;
+    margin: 0 30px;
+    line-height: 3;
+}
+
+.online__template {
+    margin-left: 70vh;
+}

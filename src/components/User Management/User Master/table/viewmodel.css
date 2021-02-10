@@ -1,0 +1,68 @@
+.nonebtnmodel .ant-btn:first-child{
+    display: none;
+}
+
+.textcontainermodel{
+    /* min-height:350px; */
+    max-height: 350px;
+    overflow-y:scroll ;
+}
+
+/* deletemodel css */
+
+.ant-modal.delmodelwidth{
+    width: 38% !important;
+    top: 180px;
+}
+.display_block button{
+    display: block !important;
+}
+.details_ticket{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ant-modal-wrap .adduser_modal{
+    width: 900px !important;
+}
+.adduser_modal .ant-modal-footer{
+display: none;
+}
+.usermaster_btn{
+    text-align: end;
+}
+.cancelusermaster{
+    border-color: #46469B;
+    color: #46469B;
+    background-color: white;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.createusermaster{
+background-color: #46469B;
+color: white;
+line-height: 1.5;
+position: relative;
+display: inline-block;
+font-weight: 400;
+white-space: nowrap;
+text-align: center;
+background-image: none;
+border: 1px solid transparent;
+cursor: pointer;
+
+height: 32px;
+padding: 0 15px;
+font-size: 14px;
+border-radius: 4px;
+}

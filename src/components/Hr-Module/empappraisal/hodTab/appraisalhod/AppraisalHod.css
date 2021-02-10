@@ -1,0 +1,15 @@
+.newuser_border_hod{
+    position: relative;
+    border: 1px solid;
+    padding: 20px;
+    margin-top: 40px;
+}
+.newUser_heading_hod{
+    font-size: 18px;
+    position: absolute;
+    top: -17px;
+    left: 30px;
+    padding: 4px;
+    background: white;
+    color: #46469b;
+}

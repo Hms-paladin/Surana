@@ -1,0 +1,67 @@
+{
+  "name": "myproject",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://localhost/surana/",
+  "dependencies": {
+    "@ant-design/icons": "^4.0.6",
+    "@material-ui/core": "^4.5.0",
+    "@material-ui/icons": "^4.4.3",
+    "antd": "^3.23.5",
+    "axios": "^0.19.2",
+    "babel-plugin-import": "^1.12.2",
+    "bootstrap": "^4.3.1",
+    "connected-react-router": "^6.5.2",
+    "css-loader": "^3.2.0",
+    "dateformat": "^3.0.3",
+    "font-awesome": "^4.7.0",
+    "history": "^4.10.1",
+    "html2canvas": "^1.0.0-rc.7",
+    "jquery": "^3.5.1",
+    "jspdf": "^1.5.3",
+    "less-loader": "^5.0.0",
+    "material-table": "^1.52.0",
+    "material-ui-table": "^0.1.2",
+    "mui-datatables": "^2.15.0",
+    "mui-datatables-bitozen": "^4.0.7",
+    "notistack": "^0.9.7",
+    "rc-tween-one": "^2.6.5",
+    "react": "^16.9.0",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-datepicker": "^3.0.0",
+    "react-dom": "^16.9.0",
+    "react-icons": "^3.10.0",
+    "react-redux": "^7.1.1",
+    "react-router": "^5.1.1",
+    "react-router-dom": "^5.1.1",
+    "react-scripts": "^3.3.0",
+    "react-select": "^3.1.0",
+    "react-spinners": "^0.8.0",
+    "react-strap": "0.0.1",
+    "react-time-picker": "^4.0.1",
+    "reactstrap": "^8.1.1",
+    "redux": "^4.0.4",
+    "redux-form": "^8.2.6",
+    "redux-thunk": "^2.3.0",
+    "uuid": "^3.3.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+.uploadDoc{
+    width: 40px;
+    height: 100px;
+    background: blue;
+}
+.uploadtxt{
+    white-space: nowrap;
+    transform: rot
+}
+
+.wrapper {
+    border-color: rgba(orange, 1);
+    min-height: 260px;
+    position: relative;
+    border-left: 40px solid #5D9FEA;
+  }
+  
+
+  .wrapDiv{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 248px;
+  }
+  /* h3 {
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    letter-spacing: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: -26px;
+    
+    transform:rotate(270deg);
+    transform-origin:0 0;
+  } */

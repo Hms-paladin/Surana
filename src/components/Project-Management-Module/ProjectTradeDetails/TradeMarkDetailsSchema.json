@@ -1,0 +1,40 @@
+{"fields":[
+          {
+            "key": "Type",
+            "alias": "Type",
+            "visible": true,
+            "queryValid": false
+          },
+          {
+            "key": "client",
+            "alias": "Client",
+            "visible": true,
+            "queryValid": false
+          },
+          {
+            "key": "mark",
+            "alias": "Mark",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "applicationdate",
+            "alias": "Application Date",
+            "visible": true,
+            "queryValid": false
+          }
+          ,{
+            "key": "appno",
+            "alias": "Application No",
+            "visible": true,
+            "format":"dd-mm-yyyy",
+            "queryValid": true
+          },
+          {
+            "key": "Actions",
+            "alias": "Actions",
+            "visible": false,
+            "queryValid": false
+          }
+                   
+          ],"table_name":"trn_agenda"}

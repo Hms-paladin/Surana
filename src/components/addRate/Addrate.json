@@ -1,0 +1,58 @@
+{"fields":[
+    {
+      "key": "agendaID",
+      "alias": "Agenda ID",
+      "visible": false,
+      "queryValid": true
+    },
+    {
+    "key": "resource",
+    "alias": "Resource",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "activity",
+    "alias": " Activity",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "court",
+    "alias": "Court",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "hearing",
+    "alias": "Hearing Type",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "casevalue",
+    "alias": "Case value",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "minrate",
+    "alias": "Min rate",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "maxrate",
+    "alias": "max rate",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "uom",
+    "alias": "UOM",
+    "visible": true,
+    "queryValid": true
+}
+
+
+    ],"table_name":"trn_agenda"}

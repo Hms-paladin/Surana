@@ -1,0 +1,9 @@
+{"fields":[
+  {
+    "key": "groupdata",
+    "alias": "Group",
+    "visible": true,
+    "queryValid": true
+  }
+  
+    ],"table_name":"trn_agenda"}

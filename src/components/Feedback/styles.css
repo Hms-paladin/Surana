@@ -1,0 +1,19 @@
+.feedback{
+	display:flex;
+	flex-direction: row;
+	padding:5px;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+
+.Table_div1 .MuiTableCell-head {
+	background-color: white !important;
+font-size: 15px;
+font-weight: bold;
+} 
+
+.striped:nth-of-type(2n+1){
+    background-color: rgba(0,0,0,.05);
+    height:10px;
+}

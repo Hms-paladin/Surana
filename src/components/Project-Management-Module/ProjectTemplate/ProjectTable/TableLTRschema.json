@@ -1,0 +1,39 @@
+{"fields":[
+          {
+            "key": "agendaTitle",
+            "alias": "Stages",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "agendaDate",
+            "alias": "Sub Stages",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "agendaFromTime",
+            "alias": "T+days",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "agendaToTime",
+            "alias": "Remind before days ",
+            "visible": true,        
+            "queryValid": true
+          },
+          {
+            "key": "mas_employee_empFirstName",
+            "alias": "Link to Previous",
+            "visible": true,
+            "queryValid": false
+          },
+          {
+            "key": "Actions",
+            "alias": "Actions",
+            "visible": false,
+            "queryValid": false
+          }
+                   
+          ],"table_name":"trn_agenda"}

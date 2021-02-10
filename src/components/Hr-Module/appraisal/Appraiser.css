@@ -1,0 +1,133 @@
+/* addquestionappraiser */
+.addquest_border{
+    border: 1px solid #46469b;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110px;
+}
+.addquest_card
+{
+    position: absolute;
+    top: -11px;
+    left: 15px;
+    background: white;
+    padding: 3px;
+    font-size: 15px;
+}
+.addquest_top{
+    margin-top: 10%;
+}
+.addquest_head
+{
+    box-shadow: 0px 0px 7px 1px grey;
+    height: 35px;
+    padding: 5px;
+}
+.addquest_addicon{
+        margin-top: 33px;
+        font-size: 30px !important;
+        fill: #46469b !important;
+        margin-left: 5px;
+}
+/* addquestionappraiser */
+
+/* AppraisalRating */
+.appRating_head{
+    box-shadow: 0px 0px 7px 1px grey;
+    height: 35px;
+    padding: 5px;
+}
+.appRating_box{
+    margin-top: 3%;
+    border: 1px solid #46469b;
+    position: relative;
+    padding: 15px;
+}
+.appRating_btnbox{
+    border: 1px solid #46469b;
+    border-radius: 3px;
+    width: 120px;
+    height: 40px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    background: white;
+    font-weight: bold;
+}
+.appRating_grid{
+    margin-top: 1% !important;
+    padding: 20px !important;
+}
+
+.appRating_paging
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.appRating_page
+{
+    width: 40px !important;
+    border: 1px solid #46469b;
+    height: 40px;
+    color: white;
+    background: #46469b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:3px;
+    opacity: 0.5;
+}
+.appRating_pageselect{
+    width: 40px !important;
+    border: 1px solid #46469b;
+    height: 40px;
+    color: white;
+    background: #46469b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:3px;
+}
+.appRating_btnsize{
+    height: 40px !important;
+    width: 100px !important;
+
+}
+@media (max-width:1024px){
+    .appRating_para{
+        height:150px;
+    }
+    }
+    @media (max-width:768px){
+        .appRating_para{
+            height:100px;
+        }
+        }
+
+@media(max-width:1024px){
+   .ant-modal-content {
+width: 80% !important;
+    margin-left: 21% !important;
+    margin-top: 10%;
+}
+}
+
+/* .ant-modal-content {
+    width: 90% !important;
+    margin-top: 5%;
+    margin-left: 5%;
+} */
+
+.apprasial_modal .ant-modal-content{
+     width: 100%;
+     margin-left: 10px;
+}

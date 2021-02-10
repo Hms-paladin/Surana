@@ -1,0 +1,45 @@
+{"fields":[
+    {
+      "key": "agendaID",
+      "alias": "Agenda ID",
+      "visible": false,
+      "queryValid": true
+    },
+    {
+      "key": "courtcaseno",
+      "alias": "Court Case No",
+      "visible": true,
+      "queryValid": true
+    },
+    {
+      "key": "clientname",
+      "alias": "Client Name",
+      "visible": true,
+      "queryValid": true
+    },
+    
+      {
+        "key": "dra",
+        "alias": " DRA ",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "ddra",
+        "alias": "DDRA",
+        "visible": true,
+        "queryValid": false
+      },
+      {
+        "key": "councelassigned",
+        "alias": "Counsel Assigned",
+        "visible": true,
+        "queryValid": true         
+      },
+      {
+        "key": "action",
+        "alias": "Action",
+        "visible": false,
+        "queryValid": false         
+      }      
+    ],"table_name":"trn_agenda"}

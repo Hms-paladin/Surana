@@ -1,0 +1,30 @@
+.root1{
+	display:flex;
+	flex-direction: row;
+	padding:50px;
+	 width: 100%;
+	 align-items: center;
+	 justify-content: center;
+
+}
+.adtitle{
+	font-weight:bold;
+	padding-left:10;
+	padding-top:10
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+      .adtitle{
+	font-weight:bold;
+	padding-left:5;
+	padding-top:5;
+	font-size: 18px
+
+}
+
+
+	}
+

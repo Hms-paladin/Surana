@@ -1,0 +1,9 @@
+.unblockcontainermodel{
+    /* min-height:350px; */
+    max-height: 350px;
+    overflow-y:scroll ;
+}
+.ant-modal.unblockmodelwidth{
+    width: 38% !important;
+    top: 180px;
+}

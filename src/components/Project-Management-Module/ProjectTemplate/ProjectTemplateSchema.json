@@ -1,0 +1,39 @@
+{"fields":[
+    {
+      "key": "stages",
+      "alias": "Stages",
+      "visible": true,
+      "queryValid": true
+    },
+    {
+      "key": "substages",
+      "alias": "Sub Stages",
+      "visible": true,
+      "queryValid": true
+    },
+    {
+      "key": "TDays",
+      "alias": "T+days",
+      "visible": true,
+      "queryValid": true
+    },
+    {
+      "key": "RBDays",
+      "alias": "Remind before days ",
+      "visible": true,        
+      "queryValid": true
+    },
+    {
+      "key": "LinkToPrevious",
+      "alias": "Link to Previous",
+      "visible": true,
+      "queryValid": false
+    },
+    {
+      "key": "Actions",
+      "alias": "Actions",
+      "visible": false,
+      "queryValid": false
+    }
+             
+    ],"table_name":"trn_agenda"}

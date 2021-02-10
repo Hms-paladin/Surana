@@ -1,0 +1,12 @@
+@media only screen and (max-width: 768px) {
+
+    .expense_table_adjust .userwidth.margin_left {
+        width: 198%;
+}
+
+  }
+
+  /* -----------------------syed */
+  .notification_expense{
+    top:68px !important;
+  }

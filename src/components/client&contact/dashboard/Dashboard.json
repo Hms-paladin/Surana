@@ -1,0 +1,33 @@
+{"fields":[
+    {
+      "key": "agendaID",
+      "alias": "Agenda ID",
+      "visible": false,
+      "queryValid": true
+    },
+    {
+    "key": "invoice_no",
+    "alias": "Invoice No",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "date",
+    "alias": "Date ",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "amount",
+    "alias": "Amount",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "status",
+    "alias": "Status",
+    "visible": true,
+    "queryValid": true
+}
+
+    ],"table_name":"trn_agenda"}

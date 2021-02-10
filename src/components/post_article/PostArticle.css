@@ -1,0 +1,11 @@
+.title-space {
+    margin-left: -4% !important;
+}
+/* .button-change .ant-upload ant-upload-select ant-upload-select-text{
+    /* margin-left: -1%; */
+    /* margin-top: top 5.5% !important; */
+/* } */ */
+.button-type .ant-upload-select{
+    margin-top: 2.4% !important;
+    margin-left: -1% !important ;
+}

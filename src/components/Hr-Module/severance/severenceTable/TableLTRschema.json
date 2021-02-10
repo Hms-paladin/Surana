@@ -1,0 +1,41 @@
+{"fields":[
+  {
+    "key": "name",
+      "alias": "Candidate Name",
+      "visible": true,
+      "queryValid": true
+  },
+    {
+      "key": "department",
+      "alias": "Department",
+      "visible": true,
+      "queryValid": true
+    },
+    
+    
+    {
+      "key": "dateofreleiving",
+      "alias": "Date of Resignation",
+      "visible": true,
+      "queryValid": true
+    },
+    {
+      "key": "resignationaccepted",
+      "alias": "Resignation accepted on",
+      "visible": true,
+      "queryValid": true
+    },
+    {
+      "key": "acceptedby",
+      "alias": "Accepted by",
+      "visible": true,
+      "queryValid": true
+    },
+    {
+      "key": "dateofreleiving",
+      "alias": "Date of Releiving",
+      "visible": true,
+      "queryValid": true
+    }  
+
+    ],"table_name":"trn_agenda"}

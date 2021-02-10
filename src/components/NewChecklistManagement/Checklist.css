@@ -1,0 +1,69 @@
+.checklist_heading_div{
+    background-color:#3f51b5;
+    height: 36px;
+    padding: 8px;
+    margin-bottom: 8px !important;
+
+}
+.checklist_heading{
+    color: white;
+}
+.add_checklist_heading_div{ 
+    background-color:#3f51b5;
+    height: 36px;
+    padding: 8px;
+}
+.plus_icon_checklist{
+    float: right;
+    color: white;
+}
+.icon_eye_checklist{
+    font-size: 25px;
+}
+.icon_eye_checklist path{
+    color: #3f51b5;
+}
+.eye_icon_checklist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add_icon_checklist svg{
+    font-size: 30px;
+    color:#3f51b5 ;
+}
+.add_icon_checklist path {
+    color:#3f51b5 ;
+}
+.checklist_activity_border{
+    border: 1px solid lightgray;
+    position: relative;
+    margin-top: 20px;
+}
+.top_checklist{
+    margin-left: 30px;
+    position: absolute;
+    top: -11px;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #3f51b5;
+    font-size: 18px;
+}
+.grid_alignment_checklist{
+    padding: 24px;
+}
+.plus_heading_div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.plus_icon_checklist svg{
+    font-size: 20px;
+}
+.close_hide .ant-modal-close-x .ant-modal-close-icon {
+    display: none;
+}
+.checklist_value_padd{
+    margin-top: 10px;
+}

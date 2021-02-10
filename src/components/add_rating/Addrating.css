@@ -1,0 +1,6 @@
+.rate_wrap{
+    white-space: nowrap;
+}
+.min_width_rate{
+    min-width: 40vh;
+}

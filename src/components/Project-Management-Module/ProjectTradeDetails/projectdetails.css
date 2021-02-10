@@ -1,0 +1,13 @@
+.projectDetailsview_container{
+    display: flex;
+    font-size: 15px;
+}
+
+.projectDetailsview_key{
+    margin-right: 15px;
+    color: #333;
+}
+
+.projectDetailsview_colon{
+    margin-right: 15px;
+}

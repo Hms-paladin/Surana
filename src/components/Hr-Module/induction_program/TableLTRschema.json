@@ -1,0 +1,27 @@
+{"fields":[
+          {
+            "key": "candidate",
+            "alias": "Candidate Name",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "department",
+            "alias": "Department",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "checklist",
+            "alias": "Checklist",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "status",
+            "alias": "Status",
+            "visible": true,
+            "queryValid": true
+          }
+              
+          ],"table_name":"induction_table"}

@@ -1,0 +1,97 @@
+.dragMasterClass table {
+    /* padding: 0px 15px !important; */
+    border-spacing: 0px;
+    margin-bottom: 5px;
+}
+
+.dragMasterClass thead {
+    background-color: #3f51b5 !important;
+}
+
+.dragMasterClass thead tr th {
+    /* width: 16.66%; */
+    /* width: 18.255%; */
+    color: white;
+}
+
+.dragMasterClass tr th span {
+    color: white !important;
+    /* white-space: nowrap; */
+    /* padding-left: 5px;
+    font-size: 14px !important; */
+}
+
+/* .dragMasterClass thead tr th:first-child {
+    padding-left: 33px;
+    width: 10%;
+}
+
+.dragMasterClass thead tr th:nth-child(2) {
+    width: 10%;
+}
+
+
+.dragMasterClass tbody td:first-child {
+    padding-left: 23px;
+    width: 10%;
+} */
+
+.dragMasterClass tbody tr {
+    border-bottom: 1px solid #e0e0e0 ;
+}
+
+.dragMasterClass tbody td:first-child{
+    padding-left: 2%;
+}
+
+.dragMasterClass tbody td:first-child,.dragMasterClass thead tr th:nth-child(1) {
+    width: 10%;
+}
+
+.dragMasterClass tbody td:nth-child(2),.dragMasterClass thead tr th:nth-child(2) {
+    width: 7%;
+}
+
+.dragMasterClass tbody td:nth-child(3),.dragMasterClass thead tr th:nth-child(3) {
+    width: 16%;
+}
+
+.dragMasterClass tbody td:nth-child(4),.dragMasterClass thead tr th:nth-child(4) {
+    width: 15%;
+}
+
+.dragMasterClass tbody td:nth-child(5),.dragMasterClass thead tr th:nth-child(5) {
+    width: 10%;
+}
+
+
+.dragMasterClass tbody td:nth-child(6),.dragMasterClass thead tr th:nth-child(6) {
+    width: 12%;
+}
+
+
+.dragMasterClass tbody td:nth-child(7),.dragMasterClass thead tr th:nth-child(7) {
+    width: 16%;
+}
+
+.dragMasterClass tbody td:nth-child(8),.dragMasterClass thead tr th:nth-child(8) {
+    width: 7%;
+}
+
+.dragMasterClass thead tr th:last-child {
+    width: 10%;
+    padding: 0px;
+}
+
+.dragMasterClass .table td{
+    border: none;
+    padding: 10px 0px;
+}
+
+.dragIconFelx {
+    display: flex !important;
+}
+
+.dragMasterClass .tableWrapper thead ~ div {
+    padding: 0px;
+}

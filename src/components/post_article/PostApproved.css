@@ -1,0 +1,28 @@
+.flex-title{
+    justify-content: space-between;
+    display: flex;
+}
+.category-place{
+    margin-right: 4%;
+}
+.content-move{
+    width: 90%;
+    margin-left: 4%;
+    height: 80%;
+    font-size: 16px;
+}
+.content-font{
+    font-weight: bold;
+}
+.article{
+    font-size: 20px;
+    font-weight: bold;
+}
+.title-font{
+    font-size: 17px;
+    font-weight: bold;
+}
+.category-font{
+    font-size: 17px;
+    font-weight: bold;
+}

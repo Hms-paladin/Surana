@@ -1,0 +1,109 @@
+/* ---------------------------------International Filing */
+.DomApp_main .head_text_edit{
+    padding: 5px 15px;
+    margin-top: 17px;
+ }
+.interfil_shade{
+    box-shadow: 0px 0px 7px 1px lightgrey;
+}
+.interfil_dropdown{
+    padding-right: 15px;
+}
+.interfil_update .ant-upload.ant-upload-select{
+    right: 0px !important;
+    bottom: 0px !important;
+}
+.interfil_uploadinput{
+    width: 204px !important;
+}
+@media (max-width:768px){
+    .interfil_uploadinput{
+        width: 119px !important;
+    }
+    .interfil_upload_Btn{
+        width: 55px !important;
+        font-size: 8px !important;
+    }
+}
+.interfil_upload_Btn{
+    position: absolute;
+    background-color: #46469B;
+    top: 22px;
+    right: -11px;
+    width: 97px;
+    height: 34px;
+    font-size: 13px;
+    border-color: #46469b;
+}
+.DomApp_main .border_edit{
+    border: 0.5px dashed grey;
+    margin: 15px 0px !important;
+}
+.DomApp_main .circle_icon_par{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.Interfil_addicon{
+    margin-top: 30px;
+    color: #46469B;
+    font-size: 25px !important;
+}
+.DomApp_main .previous_text_edit{
+    color:#46469B ;
+}
+.designapplist_main{
+    width: 95% !important;
+    position: relative !important;
+
+}
+/* .DomApp_main .table_info_par{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+} */
+.DomApp_main .table_class{
+    width: 90%;
+}
+.DomApp_main .info_icon_edit{
+    color: #46469B !important;
+    font-size: 17px;
+    margin-left: 5px;
+    position: absolute !important;
+    bottom: 200px;
+    right: 46px;
+}
+.DomApp_main .popover_content_edit{
+    background-color:#46469B !important;
+    color: white !important;
+}
+.DomApp_main .upload_edit {
+    height: 30%;
+    width: 30%;
+}
+.info_icon_edit .title{
+    background-color: blue !important;
+    color: white !important;
+}
+.antd-wave-shadow-color{
+    color:#46469B;
+}
+/* ---------------------------------International Filing */
+
+.InterFiling_main .ant-upload button {
+    margin: 0px;
+    margin-top: 2px;
+    border-radius: 2px;
+    height: 36px;
+    border-color: #c4c4c4;
+    background-color: white;
+    color: gray;
+    font-size: 15px;
+}
+
+.domesticPatent_topalign{
+    height: 40px;
+    margin: 0px;
+}
+
+

@@ -1,0 +1,21 @@
+/* .searchbarcustom{
+    border-radius: 0px !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: 1px solid !important;
+    box-shadow: none !important;
+} */
+
+.line-width{
+    width: 75%;
+}
+
+.iconalign{
+    display: flex;
+    justify-content: center;
+}
+
+.leave_table .MuiTablePagination-root{
+    border-bottom: 1px solid !important;
+}

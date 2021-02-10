@@ -1,0 +1,35 @@
+{"fields":[
+          {
+            "key": "Stages",
+            "alias": "Stages",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "SubStages",
+            "alias": "Sub Stages",
+            "visible": true,
+            "queryValid": true
+          },
+         
+          {
+            "key": "Date",
+            "alias": "Date ",
+            "visible": true,        
+            "queryValid": true
+          },
+         
+           {
+            "key": "actual_date",
+            "alias": "Actual Date",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "Actions",
+            "alias": "Actions",
+            "visible": false,
+            "queryValid": false
+          }
+                   
+          ],"table_name":"trn_agenda"}

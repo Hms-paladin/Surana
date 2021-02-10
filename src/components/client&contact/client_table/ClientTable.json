@@ -1,0 +1,34 @@
+{"fields":[
+    {
+      "key": "agendaID",
+      "alias": "Agenda ID",
+      "visible": false,
+      "queryValid": true
+    },
+    {
+    "key": "client",
+    "alias": "Client Name",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "address",
+    "alias": "Address ",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "phone",
+    "alias": "Phone Number",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "department",
+    "alias": "Department",
+    "visible": true,
+    "queryValid": true
+}
+
+
+    ],"table_name":"trn_agenda"}

@@ -1,0 +1,76 @@
+.heading_left-adjust {
+    /* text-align:left !important;
+    flex-direction:initial !important; */
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+  }
+  
+  .heading_left-adjust  thead{
+    background-color: #3f51b5 !important;
+  }
+  
+  .heading_left-adjust .MuiTableCell-head {
+    color: white;
+    vertical-align: baseline !important;
+    /* padding:0px; */
+  }
+  
+  .heading_left-adjust tr th span{
+    color:white !important;
+    white-space: nowrap;
+    padding-left:5px;
+
+  }
+  
+  .heading_left-adjust tr th span svg path{
+    color:white !important
+  }
+  
+  .EnhancedTable-tableWrapper-3 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+   .MuiTypography-body1{
+    padding: 0px !important;
+  }
+
+
+.heading_left-adjust .table td, .table th {
+  vertical-align: baseline !important;
+  padding: 7px 13px;
+}
+
+.heading_left-adjust .table th:first-child{
+  text-align: center;
+  padding: 0px 0px 0px 25px;
+}
+
+.heading_left-adjust .table td:first-child{
+  padding: 0px;
+  text-align: center;
+}
+
+.heading_left-adjust .tableWrapper{
+min-height: 360px;
+margin-top: -20px !important;
+}
+
+.bordertoppagination .MuiTablePagination-toolbar {
+  border-top: 1px solid #e0e0e0;
+}
+.dyninputbox{
+  width: 16%;
+}
+.Timesheet_viewcontents{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.ant-modal.timesheetviewwidth{
+  width: 38% !important;
+  top: 180px;
+}
+
+    

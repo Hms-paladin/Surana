@@ -1,0 +1,18 @@
+.dash_feedback{
+    display: flex;
+    justify-content: flex-end;
+}
+.dash_tab_align .MuiToolbar-regular{
+    min-height: 0px !important;
+
+}
+.dash_tab_align .heading_left .table th:first-child{
+    padding: 0px 0px 0px 0px;
+}
+.dash_tab_align .heading_left .table td, .table th{
+    padding: 7px 3px;
+}
+.dash_tab_align .heading_left .tableWrapper {
+    min-height: 190px;
+
+}

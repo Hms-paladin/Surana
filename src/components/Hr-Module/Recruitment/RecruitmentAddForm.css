@@ -1,0 +1,83 @@
+.qualification-height .MuiOutlinedInput-root{
+    height: 34px !important;
+    /* margin-left: 74% !important;
+    margin-right: -74% !important; */
+    color: grey;
+}
+/* .age-move{
+    margin-left: 37%;
+} */
+@media (min-width: 960px){
+.location-move.MuiGrid-grid-md-7 {
+    flex-grow: 0;
+    max-width: 57.333333%;
+    flex-basis: 58.333333%;
+}
+}
+@media (min-width: 600px){
+.location-move.MuiGrid-grid-sm-12 {
+    flex-grow: 0;
+    max-width: 95%;
+    flex-basis: 100%;
+}
+}
+.min-move .MuiOutlinedInput-root{
+    height: 34px !important;
+    color: grey !important;
+}
+.max-move .MuiOutlinedInput-root{
+    height: 34px !important;
+    color: grey !important;
+}
+.experience-left{
+    margin-left: 4px;
+    
+}
+
+.recruit_tag{
+    
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.min_width{
+    width:95% !important;
+}
+.max_width{
+    width: 95% !important;
+    margin-left: 5%;
+}
+.right_move{
+    margin-left: 4% !important;
+}
+
+.taglabel{
+    display: block;
+    font-size: 16px;
+}
+
+.tag_group {
+    display: flex;
+    justify-content: space-between;
+}
+/* --------------------syed----------------- */
+.recruit_minexp{
+    width: 30px !important;
+}
+.recruit_maxexp{
+    width: 30px !important;
+}
+/* --------------------syed----------------- */
+.top_move-ticket{
+    margin-top: 9px;
+}
+
+.template_error{
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.template_errormsg{
+    color: red;
+    font-size: 12px;
+}

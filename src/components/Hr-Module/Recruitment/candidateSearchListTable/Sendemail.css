@@ -1,0 +1,79 @@
+
+.sidelabelfrom{
+    margin-top: 25px;
+    margin-right: 13px;
+    font-size: 17px;
+}
+
+.sidelabelto{
+    margin-top: 25px;
+    margin-right: 35px;
+    font-size: 17px;
+}
+
+.sidelabelcc{
+    margin-top: 25px;
+    margin-right: 32px;
+    font-size: 17px;
+}
+
+.ml_addcc{
+    margin-left: 55px;
+}
+
+.crosscc{
+    margin-top: 25px; 
+}
+
+.sendmail .modal-title {
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    color: blue;
+}
+
+.sendmail .modal-header {
+    height: 50px;   
+}
+
+.sendmail .modal-content {
+margin-bottom: 75px;
+}
+
+.j_c_space_bt{
+    justify-content: space-between;
+}
+
+.j_c_fl_end{
+    justify-content: flex-end;
+}
+
+
+
+.emailbtnclr{
+    color: #fff;
+    background-color: #46469B;
+    border-color: #46469B;
+    border-radius:2px;
+    width: 84px;
+    height: 33px;
+}
+  
+
+.emailbtnclr:hover{
+    background-color: midnightblue;
+}
+
+.emailbtnclr_outline{
+    color: #46469B;
+    background-color: #fafafa;
+    border-color: #46469B;
+    border-radius:2px;
+    width: 84px;
+    height: 33px;
+}
+
+.emailbtnclr_outline:hover{
+    background-color: midnightblue;
+}
+    

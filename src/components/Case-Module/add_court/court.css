@@ -1,0 +1,17 @@
+.notification_court{
+    top:80px !important;
+  }
+  .Court_list_main{
+    position: relative;
+  }
+  .court_search{
+    position: absolute;
+    top: 16px;
+    right: 23px;
+    z-index: 1;
+}
+.court_search button{
+    margin: 0px !important;
+    background-color: #46469b !important;
+    border-color: #46469b !important;
+}

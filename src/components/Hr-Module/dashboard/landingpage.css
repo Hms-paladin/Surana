@@ -1,0 +1,14 @@
+.borderleft{
+    border-left: 1px solid #DCD4D2;
+    /* margin-left: 100px; */
+  }
+  .card-size{
+    width: 95%;
+  }
+  .mrflex1{
+    margin-right: -22px;
+  }
+  .mrflex2{
+    width: 193%;
+    margin-right: -107px;
+  }

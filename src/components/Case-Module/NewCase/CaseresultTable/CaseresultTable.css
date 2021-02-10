@@ -1,0 +1,88 @@
+.casedownload_icon{
+    font-size: 20px;
+}
+.case_image_part{
+    /* background-color: red;  */
+   width: 85%;
+} 
+.court_img_div{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 76vh;
+}
+.court_img_align{
+   width: 100%;
+   box-shadow: 0px 0px 7px 1px lightgrey;
+   height: 100%;
+   padding: 5px;
+}
+.court_img_empty{
+   width: 100%;
+   box-shadow: 0px 0px 7px 1px lightgrey;
+   height: 100%;
+   padding: 5px;
+}
+.wrap_empty{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.content_empty{
+   font-size: 16px;
+   margin-left: 15px ;
+   margin: 8px;
+}
+.court_img_div img{
+ margin-left: 15px ;
+ width: 15%;
+}
+
+.image_icons_div{
+   display: flex;
+}
+.case_download_icon{
+   /* background-color: red; */
+   width: 15%;
+}
+.star_icon_align_caseresult{
+   font-size: 30px;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+.star_icon_color_caseresult{
+   font-size: 30px;
+   margin-left: 20px;
+   margin-top: 20px;
+   color: #f1f116 !important;
+}
+.court_navigatenext_div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 10px;
+}
+.arrow_edit_caseresult{
+   font-size: 30px;
+   color: blue;
+}
+.four_edit_caseresult{
+   color: darkblue;
+   padding-top: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .caseresult_table_cardalign .heading_left{
+        width: 170%; 
+}
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .caseresult_table_cardalign .heading_left{
+        width: 112%; 
+}
+  }

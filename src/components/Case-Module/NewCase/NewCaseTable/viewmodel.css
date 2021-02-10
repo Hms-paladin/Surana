@@ -1,0 +1,45 @@
+.nonebtnmodel .ant-btn:first-child{
+    display: none;
+}
+
+.textcontainermodel1{
+    /* min-height:350px; */
+    /* max-height: 350px;
+    overflow-y:scroll ; */
+}
+
+/* deletemodel css */
+
+.ant-modal.delmodelwidth{
+    width: 38% !important;
+    top: 180px;
+}
+.vertical_line-case{
+    border-left: 3px solid gray !important;
+    height: 200px !important;
+}
+/* .phyBundleDate label , br{
+display: none;
+} */
+.phyBundleDate{
+    width: 128px;
+    font-size: 14px;
+    
+}
+.phyBundleDate .surana .MuiOutlinedInput-input {
+    /* padding: 8.5px 14px; */
+    padding: 6px;
+    font-size: 14px;
+    height: 33px !important;
+
+}
+.phyBundleDate .MuiSvgIcon-root{
+    width: 20px;
+}
+.details_ticket.dtails{
+    width: 166px;
+    border: 1px grey solid;
+    /* height: 60px; */
+    min-height: 60px;
+    padding: 2px;
+}

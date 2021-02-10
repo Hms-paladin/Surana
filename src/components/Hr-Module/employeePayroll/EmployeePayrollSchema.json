@@ -1,0 +1,39 @@
+{"fields":[
+    {
+      "key": "agendaID",
+      "alias": "Agenda ID",
+      "visible": false,
+      "queryValid": true
+    },
+    {
+      "key": "employeename",
+      "alias": "Employee Name",
+      "visible": true,
+      "queryValid": true
+    },
+    {
+        "key": "department",
+        "alias": "Department",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "workingdays",
+        "alias": " Working days",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "lossofpay",
+        "alias": "Loss of Pay(days)",
+        "visible": true,
+        "queryValid": true
+      },
+      {
+        "key": "pay",
+        "alias": "Pay",
+        "visible": true,
+        "queryValid": true
+      }
+
+    ],"table_name":"trn_agenda"}

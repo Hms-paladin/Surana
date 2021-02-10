@@ -1,0 +1,32 @@
+{"fields":[
+    {
+      "key": "agendaID",
+      "alias": "Agenda ID",
+      "visible": false,
+      "queryValid": true
+    },
+    {
+    "key": "name",
+    "alias": "Name",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "designation",
+    "alias": "Designation",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "email",
+    "alias": "Email",
+    "visible": true,
+    "queryValid": true
+},
+{
+    "key": "mobile",
+    "alias": "Mobile Num",
+    "visible": true,
+    "queryValid": true
+}
+    ],"table_name":"trn_agenda"}

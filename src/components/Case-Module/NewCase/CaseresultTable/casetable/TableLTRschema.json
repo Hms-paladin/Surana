@@ -1,0 +1,47 @@
+{"fields":[
+          {
+            "key": "agendaID",
+            "alias": "Agenda ID",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "agendaTitle",
+            "alias": "Case Type",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "agendaDate",
+            "alias": "Client Name",
+            "visible": true,
+            "queryValid": true
+          },
+          {
+            "key": "agendaFromTime",
+            "alias": "Client Industry",
+            "visible": false,
+            
+            "queryValid": true
+          },
+          {
+            "key": "agendaToTime",
+            "alias": "Next Hearing",
+            "visible": false,
+          
+            "queryValid": true
+          },
+          {
+            "key": "mas_employee_empFirstName",
+            "alias": "Case Status",
+            "visible": true,
+            "queryValid": false
+          },
+          {
+            "key": "Actions",
+            "alias": "Actions",
+            "visible": false,
+            "queryValid": false
+          }
+                   
+          ],"table_name":"trn_agenda"}

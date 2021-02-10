@@ -1,0 +1,34 @@
+
+
+.mt_employee{
+margin-top: 53px;
+font-size: 16px;
+}
+
+.dis_none{
+    display: none !important;
+}
+.icon_size{
+font-size: 20px !important;
+margin-top: 12px;
+
+}
+
+.localicon_size{
+    font-size: 34px !important;
+    margin-left: -22px;
+    margin-top: -2px;
+    color: grey;
+}
+.inputassignment_mt{
+    margin-top: -4px;
+
+}
+
+.task_font{
+    margin-left: 72px;
+    font-size: 19px;
+    margin-top: -13px;
+    width: 148px;
+    background-color: ghostwhite;
+}

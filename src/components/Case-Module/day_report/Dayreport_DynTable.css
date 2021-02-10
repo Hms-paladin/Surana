@@ -1,0 +1,85 @@
+.heading_left {
+    /* text-align:left !important;
+    flex-direction:initial !important; */
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+  }
+  
+  .heading_left  thead{
+    background-color: #3f51b5 !important;
+  }
+  
+  .heading_left .MuiTableCell-head {
+    color: white;
+    vertical-align: baseline !important;
+    /* padding:0px; */
+  }
+  
+  .heading_left tr th span{
+    color:white !important;
+    white-space: nowrap;
+    padding-left:5px;
+
+  }
+  
+  .heading_left tr th span svg path{
+    color:white !important
+  }
+  
+  .EnhancedTable-tableWrapper-3 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+   .MuiTypography-body1{
+    padding: 0px !important;
+  }
+
+
+.heading_left .table td, .table th {
+  vertical-align: baseline !important;
+  padding: 7px 13px;
+}
+
+.heading_left .table th:first-child{
+  text-align: center;
+  padding: 0px 0px 0px 25px;
+}
+
+.heading_left .table td:first-child{
+  padding: 0px;
+  text-align: center;
+}
+
+.heading_left .tableWrapper{
+min-height: 360px;
+}
+
+.bordertoppagination .MuiTablePagination-toolbar {
+  border-top: 1px solid #e0e0e0;
+}
+.dyninputbox{
+  width: 16%;
+}
+    
+/* -------------------------------syed ----------------------*/
+.Dayreport_collapsetable{
+  border-top: dotted grey;
+
+}
+.Dayreport_row{
+  background-color:  #d1d1fe !important;
+  margin: 10px;
+}
+.Dayreport_row table td{
+  border-top: none;
+}
+.Dayreport_th{
+  /* width:200px; */
+  color: #46469b;
+}
+
+.Table_Align>tbody>tr>td>div>br{
+  display:none;
+}

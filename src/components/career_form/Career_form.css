@@ -1,0 +1,129 @@
+
+.follow_heading{
+   box-shadow: 0px 0px 1px 1px grey;
+   height: 35px;
+   padding: 5px;
+   margin-bottom: 10px;
+}
+.personal_info_edit{
+   background-color: #E5E8E8;
+   height: 35px; 
+   padding-left: 35px;
+   padding-top: 6px;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: space-between;
+}
+.add_icon_parent{
+      height: 24px;
+      width:24px;
+      background-color: #46469B;
+      margin-right: 10px;
+     border-radius: 4px;
+   }
+   .license_tag_par{
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+   }
+   .add_icon_parents{
+      height: 24px;
+      width:24px;
+      background-color: #46469B;
+      margin-right: 10px;
+     border-radius: 4px;
+     display: flex;
+     text-align: center;
+     margin-left: 10px;
+   }
+   .add_adjusts{
+      font-size: 50px !important;
+      padding-bottom: 25px;
+      padding-left: 0px !important;
+      padding-top: 0px !important;
+      padding-right: 25px !important;
+      color: white;
+   }
+.add_adjust{
+   /* float: right !important; */
+   /* align-items: flex-end; */
+   /* padding-right: 10px; */
+   font-size: 28px !important;
+   padding-bottom: 5px;
+   padding-left: 3px;
+   color: white;
+ }
+ .license_addicon{
+    display: flex;
+ }
+.Display_Inline{
+   display: inline-block;
+}
+
+.Display_Inline .calenderantdstyle{
+   width: 100%;
+}
+.Display_Inline .ant-select-show-arrow{
+   width: 100%;
+}
+.Avater_align .avatar-uploader{
+   width: unset !important;
+}
+.Textarea_height textarea{
+   height: 118px !important;
+}
+.border_edit{
+    border-color:1px #46469B; 
+    /* height: 200px;  */
+} 
+.addbox-height{
+   height: 90% !important;
+   width: 124% !important;
+}
+.tag_item i.anticon.anticon-plus{
+   margin-top: 2px;
+   padding: 8px;
+}
+.tag_item_value{
+   /* width: 16.5vw; */
+   height: 5vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   /* margin: 17px; */
+   font-size:14px;
+   width: 100% !important;
+   margin: 0 !important;
+}
+
+.addbox{
+   margin-left: -24%;
+   margin-top: 3.5%;
+}
+
+ /* @media (max-width: 768px){
+    .tag_item {
+       width: 16vw !important;
+       font-size: 11px;
+       margin-right: 15px;
+   }
+   }   */
+
+/* @media (max-width: 767px){
+   .Display_Inline  .father_guardian_edit .commonlabel{
+     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+   }
+   } */
+  
+
+   @media only screen and (device-width: 768px) {
+      .Display_Inline  .father_guardian_edit .commonlabel{
+         white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100px;
+       }
+    }

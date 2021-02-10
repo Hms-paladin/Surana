@@ -1,0 +1,112 @@
+/* ---------------------------------International Filing */
+.InterFilingOPP_main .head_text_edit{
+    padding: 5px 15px;
+    margin-top: 17px;
+ }
+.interfil_shade{
+    box-shadow: 0px 0px 7px 1px lightgrey;
+}
+.interfil_dropdown{
+    padding-right: 15px;
+}
+.interfil_update .ant-upload.ant-upload-select{
+    right: 0px !important;
+    bottom: 0px !important;
+}
+.interfil_uploadinput{
+    width: 204px !important;
+}
+@media (max-width:768px){
+    .interfil_uploadinput{
+        width: 119px !important;
+    }
+    .interfil_upload_Btn{
+        width: 55px !important;
+        font-size: 8px !important;
+    }
+}
+.interfil_upload_Btn{
+    position: absolute;
+    background-color: #46469B;
+    top: 22px;
+    right: -11px;
+    width: 97px;
+    height: 34px;
+    font-size: 13px;
+    border-color: #46469b;
+}
+.InterFilingOPP_main .border_edit{
+    border: 0.5px dashed grey;
+    margin: 15px 0px !important;
+}
+.InterFilingOPP_main .circle_icon_par{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.Interfil_addicon{
+    margin-top: 30px;
+    color: #46469B;
+    font-size: 25px !important;
+}
+.InterFilingOPP_main .previous_text_edit{
+    color:#46469B ;
+}
+/* .InterFilingOPP_main .table_info_par{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+} */
+.filedOpp_tablemain{
+    /* width: 95% !important; */
+    position: relative !important;
+}
+.InterFilingOPP_main .table_class{
+    width: 90%;
+}
+.InterFilingOPP_main .info_icon_edit{
+    color:#46469B !important;
+    font-size: 16px;
+    margin-left: 5px;
+    position: absolute !important;
+    bottom: 43px;
+    right: 46px;
+}
+.InterFilingOPP_main .popover_content_edit{
+    background-color:#46469B !important;
+    color: white !important;
+}
+.InterFilingOPP_main .upload_edit {
+    height: 30%;
+    width: 30%;
+}
+.info_icon_edit .title{
+    background-color: blue !important;
+    color: white !important;
+}
+.antd-wave-shadow-color{
+    color:#46469B;
+}
+.notifiction_tradeOPP{
+    top:80px !important;
+  }
+.hearing_parent{
+    position: relative;
+}
+.hearing_add{
+    position: absolute;
+    top: 37px;
+    right: 37px;
+    font-size: 20px !important;
+    fill: #46469b !important;
+    z-index: 99999;
+}
+
+/* ---------------------------------International Filing */
+
+.filed_topalign,.defended_topalign{
+    height: 40px;
+    margin: 0px;
+    position: relative;
+    top: 20px;
+}
