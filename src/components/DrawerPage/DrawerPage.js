@@ -982,7 +982,7 @@ class MiniDrawer extends React.Component {
                                 </MenuItem>
                             
                             </List>
-                        </Collapse> */}
+                        </Collapse> 
 
 
                         {/* <MenuItem button onClick={() => this.collapse(10)}>

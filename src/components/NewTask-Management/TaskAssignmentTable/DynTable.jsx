@@ -33,6 +33,9 @@ import Toaster from '../../../toaster/toaster';
 import { apiurl } from '../../../App';
 import axios from 'axios';
 import LocalOfferOutlinedIcon from "@material-ui/icons/LocalOfferOutlined";
+import { ReactSVG } from 'react-svg'
+
+import more from '../../../images/more.svg'
 // import CourtList from '../CourtList';
 
 
@@ -156,7 +159,7 @@ function EnhancedTableHead(props) {
       </TableSortLabel>
       </Tooltip>
       </TableCell>
-      <TableCell
+      {/* <TableCell
       key={"actions"}
       
       >
@@ -171,8 +174,8 @@ function EnhancedTableHead(props) {
       View
       </TableSortLabel>
       </Tooltip>
-      </TableCell>
-      <TableCell
+      </TableCell> */}
+      {/* <TableCell
       key={"actions"}
       
       >
@@ -187,6 +190,22 @@ function EnhancedTableHead(props) {
       Action
       </TableSortLabel>
       </Tooltip>
+      </TableCell> */}
+      <TableCell
+      key={"actions"}
+      
+      >
+      
+     
+        <div class="dropdown">
+  <button class="btn more_btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   <ReactSVG className="more" src={more} />
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#"><EditIcon/>Reassign</a>
+    <a class="dropdown-item" href="#"><DeleteIcon/>Delete</a>
+  </div>
+</div>
       </TableCell>
       </TableRow>
       </TableHead>
@@ -603,7 +622,7 @@ render(){
   console.log(this.state.row,"rowdata")
   const datachange=this.state.filteropen?this.state.data2:this.state.data
   return (
-    <div>
+    <div className="fitcontenttable">
     {/* <Search 
     className="w-25"
     placeholder="Search.." 
@@ -681,18 +700,23 @@ render(){
                         )}
                       
                       <TableCell align="left" >
+                      {this.props.pinclose==="pinicon"?null:
+
                       <Tooltip title="view" placement="right" enterDelay={300}>
                         <LocalOfferOutlinedIcon className="sethover_background" 
                         />
-                        </Tooltip>
+                        </Tooltip>}
                       </TableCell>
-                     <TableCell align="left" >
+                     {/* <TableCell align="left" >
+                     {this.props.viewclose==="viewicon"?null:
+
                       <Tooltip title="view" placement="right" enterDelay={300}>
                         <VisibilityIcon className="sethover_background" 
                         onClick={(e)=>this.viewopen(row.id)}
                         />
                         </Tooltip>
-                      </TableCell>
+                }
+                      </TableCell> */}
                       <TableCell align="left" style={{paddingLeft:"10px"}}>{
                         <div className={""}>
                           {this.props.editclose==="editicon"?null:

@@ -153,7 +153,7 @@ function EnhancedTableHead(props) {
       </TableSortLabel>
       </Tooltip>
       </TableCell>
-      <TableCell
+      {/* <TableCell
       key={"actions"}
       
       >
@@ -168,7 +168,7 @@ function EnhancedTableHead(props) {
       Action
       </TableSortLabel>
       </Tooltip>
-      </TableCell>
+      </TableCell> */}
       </TableRow>
       </TableHead>
   );

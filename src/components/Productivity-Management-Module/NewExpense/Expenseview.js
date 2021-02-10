@@ -1,9 +1,11 @@
 import React from 'react';
-import SearchBox from '../../../formcomponent/searchBox';
 import Expenseschema from './Expenseviewschema.json';
 import EnhancedTable from "./NewExpenseTable/DynTable";
+import { Input, notification } from "antd";
+
 import './Expenseview.css';
 import { apiurl } from "../../../App";
+const { Search } = Input;
 
 const axios = require('axios');
 
@@ -15,6 +17,7 @@ class Expenseview extends React.Component{
             edituserdata:null,
             modalvisible:false,
             usertabledata:[],
+            search: null,
             edit:null
         };
       }
@@ -73,66 +76,37 @@ class Expenseview extends React.Component{
         });
         }
 
-        //  search function
-
-    // searchdata=(e)=>{
-    //   let x;
-    //   let m;
-    //   let a;
-    //   let schmetruedatasplit=[]
-    //   let schmetruedata=[]
-    //   let dataindex=[]
-  
-    //   for (x=0;x<this.state.data.length;x++){
-    //   schmetruedatasplit.push(this.state.tableschema&&this.state.tableschema.length>0&&this.state.tableschema.filter((obj)=>obj.visible==true).map((item,key)=>{
-    //   var checkempty=!this.state.data[x][item.key]?'':this.state.data[x][item.key];
-    //     item[this.state.data[x].key]=checkempty;
-    //   return(
-    //    item.date?(this.bindDate(new Date(this.state.data[x][item.key]),item.format)):(item.key!=this.state.primaryKey ?this.state.data[x][item.key]:'')
-    //     )
-    //     }))
-        
-    //   }
-  
-    //   for(a=0;a<schmetruedatasplit.length;a++){
-    //   schmetruedata=schmetruedata.concat(schmetruedatasplit[a])
-    //   }
-  
-    //   const schmealldata=this.state.tableschema.filter((len)=>len.visible===false)
-    //   const schmetruelength=this.state.tableschema.length-schmealldata.length
-     
-     
-    //  const filtervalue=schmetruedata.filter(
-    //    function(reduce) {
-    //      return reduce.toLowerCase().indexOf(e.target.value.toLowerCase()) !== -1;
-    //  }
-    //  )
-    //  console.log(filtervalue,"filtervalue")
-  
-    //   for (m=0;m<filtervalue.length;m++){
-    //     dataindex.push(schmetruedata.indexOf(filtervalue[m]))
-    //   }
-    //   // console.log(schmetruelength,"dataindex")
-  
-    //   let p
-    //   let q
-    //   var defaultvalue=0
-    //   let cal=schmetruelength
-    //   for(q=0;q<schmetruedata.length;q++){
-    //     console.log(defaultvalue,"defaultvalue")
-    //     for(p=defaultvalue;p<schmetruelength+defaultvalue;p++){
-    //       console.log(p)
-    //       if(defaultvalue===schmetruelength-1){
-    //         defaultvalue=defaultvalue+schmetruelength
-    //       }
-    //     }
-    //   }
-      
-  
-    // }
+       
+    searchdata = (e) => {
+      this.setState({
+        search: e.target.value,
+      });
+    };
 
 
     render(){
+      const searchdata = this.state.usertabledata.filter((data) => {
+        if (this.state.search === null) return data;
+        else if (
+          (data.Department !== null &&
+            data.Department.toLowerCase().includes(
+              this.state.search.toLowerCase()
+            )) ||
+          (data.Name !== null &&
+            data.Name.toLowerCase().includes(this.state.search.toLowerCase())) ||
+          (data.CreateDate !== null &&
+            data.CreateDate.toLowerCase().includes(
+              this.state.search.toLowerCase()
+            )) 
+          //   ||
+          // (data.Amount !== null &&
+          //   data.Amount.toLowerCase().includes(
+          //     this.state.search.toLowerCase()
+          //   )) 
+        ) {
+          return data;
+        }
+      });
         return(
             <React.Fragment>
             <div className="card card-min-height mt-4">
@@ -140,8 +114,13 @@ class Expenseview extends React.Component{
   
             <div className="">
                 <div  className="empSearch_Main">
-                    <SearchBox className=""
-                    placeholder=""/>
+                    <Search className=""
+                    placeholder="Search.."
+
+                    onChange={this.searchdata}
+                    />
+                  
+
                 
                 </div>
 
@@ -149,13 +128,14 @@ class Expenseview extends React.Component{
                     <EnhancedTable 
                     editData={(data)=>this.editData(data)} 
                     deleteData={(data)=>this.deleteData(data)} 
-                    tabledata={this.state.usertabledata} 
+                    tabledata={searchdata} 
                     primaryKey="userId" 
                     tableschema={Expenseschema.fields} 
                     multideleteData={(data)=>this.multideleteData(data)}
                     editclose={"editicon"}
                     mainclassName={"userwidth"}
                     tablehead={"Expense List"}
+                    deleteclose={"deleteicon"}
 
       
         />

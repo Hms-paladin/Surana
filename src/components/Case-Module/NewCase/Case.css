@@ -39,7 +39,7 @@ height: 40px;
     display: inline-flex !important;
     position: absolute;
     top: 29px;
-    right: 31px;
+    right: 0px;
     font-size: 30px !important;
     fill: #46469b !important;
     z-index: 99999 !important;

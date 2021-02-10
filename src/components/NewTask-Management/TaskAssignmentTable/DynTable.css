@@ -1,3 +1,14 @@
+.fitcontenttable{
+  width: 100%;
+}
+
+.more{
+    width: 18px;
+    height: 18px;
+}
+.more svg{
+  fill: white;
+}
 .heading_left {
     /* text-align:left !important;
     flex-direction:initial !important; */

@@ -12,6 +12,7 @@ import Dropdownantd from "../../formcomponent/dropdownantd";
 import { getEmployee } from "./TaskAssignmentAction/TaskAssignmentAction";
 import { connect } from "react-redux";
 import ValidationLibrary from "../../validationlibrary/validation";
+import pin from '../../images/court.jpg'
 const { Search } = Input;
 const axios = require("axios");
 
@@ -73,9 +74,10 @@ class ViewAssignment extends React.Component {
             Efforthours: data.Efforthours,
             ExpectedDate: data.ExpectedDate,
             Priority: data.Priority,
+
             Percentage: data.Percentage,
-            client:data.ClientName,
-            ProCase:data.ProjectName,
+            // client:data.ClientName,
+            // ProCase:data.ProjectName,
             id: data.TaskId,
           });
         });
@@ -238,10 +240,10 @@ class ViewAssignment extends React.Component {
               enterButton
               onChange={this.searchdata}
             />
-            <AddCircleOutlineIcon
+            {/* <AddCircleOutlineIcon
               className="case_addicon"
               onClick={() => this.AddClick()}
-            />
+            /> */}
           </div>
           <div className="table_x_scroll">
             <EnhancedTable
@@ -253,6 +255,11 @@ class ViewAssignment extends React.Component {
               editOpen={(id, rowdata) => this.editClick(id, rowdata)}
               mainclassName={"userwidth"}
               tablehead={"View Assignment"}
+              editclose={"editicon"}
+              deleteclose={"deleteicon"}
+
+
+
             />
           </div>
         </div>
