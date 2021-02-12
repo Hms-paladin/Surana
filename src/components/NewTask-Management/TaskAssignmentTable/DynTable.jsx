@@ -26,7 +26,7 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 import './DynTable.css';
 import dateFormat from 'dateformat';
 import Modalreact from "./viewmodel"
-import { Input, Row } from 'antd';
+import { Input, Row,notification } from "antd";
 import { Modal } from 'antd';
 import Deletemodal from './deletemodel';
 import Toaster from '../../../toaster/toaster';
@@ -89,6 +89,13 @@ function EnhancedTableHead(props) {
   return (
       <TableHead>
       <TableRow>
+      <TableCell padding="checkbox">
+            <Checkbox
+              indeterminate={numSelected > 0 && numSelected < rowCount}
+              checked={rowCount > 0 && numSelected === rowCount}
+              onChange={onSelectAllClick}
+            />
+          </TableCell>
       <TableCell
       key={"sno"}
       sortDirection={orderBy === "sno" ? order : false}
@@ -109,13 +116,7 @@ function EnhancedTableHead(props) {
       
       </TableCell>
 
-      {/* <TableCell padding="checkbox">
-            <Checkbox
-              indeterminate={numSelected > 0 && numSelected < rowCount}
-              checked={rowCount > 0 && numSelected === rowCount}
-              onChange={onSelectAllClick}
-            />
-          </TableCell> */}
+     
 
       {props.tableHead.length>0&&props.tableHead.filter((row) =>row.visible===true).map(row => {
         return (
@@ -203,7 +204,12 @@ function EnhancedTableHead(props) {
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="#"><EditIcon/>Reassign</a>
-    <a class="dropdown-item" href="#"><DeleteIcon/>Delete</a>
+    {numSelected > 0 ? (
+             <a class="dropdown-item" onClick={props.sendcallback}><DeleteIcon onClick={props.sendcallback}/>Delete</a>
+
+        ) : null
+       
+        }
   </div>
 </div>
       </TableCell>
@@ -457,7 +463,7 @@ class DynTable extends Component {
       this.setState({ selected: [] });
     };
 
-    handleClick = (event, id) => {
+    handleClick = (event, id,data) => {
       
       const { selected } = this.state;
       const selectedIndex = selected.indexOf(id);
@@ -537,12 +543,37 @@ class DynTable extends Component {
   }
 
   deleteselectedcheckbox =(e)=>{
-    this.props.multideleteData&&this.props.multideleteData(e);
-    this.setState({
-      selected:[],
+    alert()
+  
+  var self = this;
+    axios({
+      method: "delete",
+      url: `${apiurl}/removetaskassignment`,
+      data: {
+        "taskId": this.state.selected,
+      },
     })
+      .then(function (response) {
+        console.log(response, "responsecourt");
+        // self.props.opendelete()
+        self.getAssignment();
+        alert("ggg");
+        self.setState({ deleteSuccessClose: true });
+        notification.warning({
+          message: `Deleted successfully`,
+          duration: 3.5,
+          placement: "topRight",
+          className: "notification_court",
+        });
+      })
+      .catch(function (error) {
+        console.log(error, "myerror");
+      });
+  this.setState({
+      selected:[],
+    })  
   }
-
+  
   viewopen=(getid)=>{
     var self = this
     axios({
@@ -619,7 +650,7 @@ class DynTable extends Component {
   
 
 render(){
-  console.log(this.state.row,"rowdata")
+  console.log(this.state.selected,"mccfgfdgm")
   const datachange=this.state.filteropen?this.state.data2:this.state.data
   return (
     <div className="fitcontenttable">
@@ -632,7 +663,7 @@ render(){
     /> */}
 
     <div className={`margin_left ${this.props.mainclassName}`} style={{marginTop:"1%"}}>
-    <div className="heading_left" >
+    <div className="head_left" >
    
       <Paper className="paper">
       <EnhancedTableToolbar numSelected={this.state.selected.length} 
@@ -670,12 +701,8 @@ render(){
                       key={row.id}
                       selected={isSelected}
                     >
-                      
-                      <TableCell className="Createres_tablecell">
-                        {this.state.rowsPerPage * this.state.page -1 +index +2}
-                      </TableCell>
-
-                      {/* <TableCell padding="checkbox"
+                                           
+                       <TableCell padding="checkbox"
                       onClick={event => this.handleClick(event, row.id)}
                       role="checkbox"
                       aria-checked={isSelected}
@@ -684,7 +711,13 @@ render(){
                       selected={isSelected}
                       >
                         <Checkbox checked={isSelected} />
-                      </TableCell> */}
+                      </TableCell>
+                      
+                      <TableCell className="Createres_tablecell">
+                        {this.state.rowsPerPage * this.state.page -1 +index +2}
+                      </TableCell>
+
+                      
 
 
                       {[row].map(((data,index)=>{

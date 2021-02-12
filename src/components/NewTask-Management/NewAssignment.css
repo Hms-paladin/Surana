@@ -125,3 +125,9 @@
 .offer_adjust{
     margin-top: 4% !important;
 }
+.addassign_addbtn{
+display: flex;
+    align-items: flex-end;
+    margin-right: 15px;
+    cursor: pointer;
+}

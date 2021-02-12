@@ -501,12 +501,12 @@ nameSelect = (event, num) => {
               <div className="card mt-5">
                   <div className="card-body">
                     <div className="newExp_border">
-                      <div>
+                      {/* <div>
                         <AddCircleOutlineOutlinedIcon
                           onClick={this.addAssignment}
                           className="newExp_addicon"
                         />
-                      </div>
+                      </div> */}
                       {this.state.Assignments.map((val, index) => {
                         return (
                           <div className="flex">
@@ -668,8 +668,18 @@ nameSelect = (event, num) => {
                                       </span>
                                     )}
                                 </div>
+                               
                               </div>
+                             
                             </Grid>
+                            {index === 0 ? (
+                                <div className="addassign_addbtn">
+                                <AddCircleOutlineOutlinedIcon
+                                  onClick={this.addAssignment}
+                                  className="newExp_addicon"
+                                />
+                              </div>
+                              ):null}
                             <Grid>
                               {index === 0 ? null : (
                                 <IconButton

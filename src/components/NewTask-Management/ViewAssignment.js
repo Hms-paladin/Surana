@@ -103,14 +103,14 @@ class ViewAssignment extends React.Component {
     console.log(data, "editdata");
     console.log(id, "editdata");
   };
-  deleterow = (data) => {
+  deleterow = (data) => {   
     console.log(data, "data");
     var self = this;
     axios({
       method: "delete",
       url: `${apiurl}/removetaskassignment`,
       data: {
-        "TaskId": data,
+        "taskId": data,
       },
     })
       .then(function (response) {
@@ -131,6 +131,7 @@ class ViewAssignment extends React.Component {
       });
     this.setState({});
   };
+   
   changeDynamic = (data, key) => {
     console.log("key", key);
     console.log("data", data);
@@ -250,6 +251,8 @@ class ViewAssignment extends React.Component {
               tabledata={searchdata}
               primaryKey="userId"
               tableschema={taskSchema.fields}
+              multideleteData={(data) => this.multideleteData(data)}
+
               deleterow={(id) => this.deleterow(id)}
               deleteSuccessClose={this.state.deleteSuccessClose}
               editOpen={(id, rowdata) => this.editClick(id, rowdata)}
