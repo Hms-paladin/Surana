@@ -69,7 +69,9 @@ import DesignMain from '../Project-Management-Module/Design/DesignMain/DesignMai
 import ProjectTemplate from '../Project-Management-Module/ProjectTemplate/ProjectTemplate';
 import Copyright from '../Project-Management-Module/Copyright/Copyright';
 import Project from '../Project-Management-Module/Project/Project';
-import PatentMain from '../Project-Management-Module/Patent/PatentMain/PatentMain'
+import PatentMain from '../Project-Management-Module/Patent/PatentMain/PatentMain';
+import AssignRate from "../Project-Management-Module/Rate/AssignRate/assignRate";
+import TableRate from "../Project-Management-Module/Rate/RateDropdown/TableRate/Tablerate";
 
 //productivity module
 // import timesheet from '../Timesheet-Module/timesheet';
@@ -607,6 +609,13 @@ class MiniDrawer extends React.Component {
                                     <ListItemText primary="IP Project Dashboard" />
                                 </MenuItem>
 
+                                <MenuItem button className={classes.nested} component={Link} to="/Home/assignrate">
+                                    <ListItemIcon>
+                                        <InboxIcon />
+                                    </ListItemIcon>
+                                    <ListItemText primary="Assign Rate" />
+                                </MenuItem>
+
                                
                             </List>
                         </Collapse>
@@ -982,7 +991,7 @@ class MiniDrawer extends React.Component {
                                 </MenuItem>
                             
                             </List>
-                        </Collapse> */}
+                        </Collapse>
 
 
                         {/* <MenuItem button onClick={() => this.collapse(10)}>
@@ -1154,6 +1163,8 @@ class MiniDrawer extends React.Component {
                     <Route exact path={`${this.props.match.path}/Project`} component={Project} />
                     {/* TradeMarkDetails */}
                     <Route exact path={`${this.props.match.path}/trademarkdetails`} component={TradeMarkDetails} />
+                    <Route exact path={`${this.props.match.path}/assignrate`} component={AssignRate}/>
+                    <Route exact path={`${this.props.match.path}/tablerate`} component={TableRate} />
 
 
                     {/* Productivity Module */}

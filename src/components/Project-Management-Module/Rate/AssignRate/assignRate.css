@@ -1,0 +1,26 @@
+.assing_rate_head{
+    box-shadow: 0px 0px 5px 1px grey;
+    height: 35px;
+    padding: 5px;
+    margin-top: 20px;
+}
+.client_name_head_rate{
+    font-size: 18px;
+    color: #46469B !important;
+}
+.client_name_rate{
+    font-size: 17px;
+    font-weight: 500;
+} 
+.assignrate_modal .ant-modal-content .ant-modal-close{
+    display: none;
+}
+.assignrate_modal .ant-modal-content{
+    width: 507px !important;
+    display: flex;
+    height: 100;
+    height: 1;
+    margin-top: 10%;
+    /* margin-right: 10px; */
+    margin-left: 52%;
+}
