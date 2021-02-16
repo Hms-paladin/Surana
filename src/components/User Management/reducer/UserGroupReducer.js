@@ -6,6 +6,7 @@ const defaultState = {
 }
 
 export const userGroupReducer = (state=defaultState, action) => {
+    console.log(action,"grouptest")
     switch (action.type) {
         case GET_USER_GROUP:
             let userGroup = [];

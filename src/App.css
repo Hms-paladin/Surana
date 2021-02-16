@@ -170,9 +170,9 @@
 .table_x_scroll{
   overflow-x: scroll;
 }
- ::-webkit-scrollbar{
+ /* ::-webkit-scrollbar{
   height: 12px !important;
-}
+} */
 .userwidth.margin_left{
   width:100%;
 }

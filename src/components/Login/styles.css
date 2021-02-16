@@ -37,4 +37,6 @@
     }
 } 
 
-
+.loginErrMsg{
+  color: red;
+}

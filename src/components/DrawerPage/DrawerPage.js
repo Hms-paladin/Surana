@@ -79,7 +79,6 @@ import TaskAssignment from '../NewTask-Management/TaskAssignment'
 import TradeMarkDetails from '../Project-Management-Module/ProjectTradeDetails/projectdetails';
 
 
-import Login from "../../components/Login/index";
 import UserGroup from '../User Management/User Group/usergroup';
 import UserMaster from '../User Management/User Master/usermaster';
 // Invoice module
@@ -125,6 +124,7 @@ import UserManagement from "../../images/navbarLogo/User Management.svg"
 // Addrate
 
 import AddRate from "../addRate/Addrate"
+import Useraccess_rights from '../User Management/UserAccess/userAccessRights';
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -837,6 +837,13 @@ class MiniDrawer extends React.Component {
                                     </ListItemIcon>
                                     <ListItemText primary="User Master" />
                                 </MenuItem>
+                                
+                                <MenuItem button className={classes.nested} component={Link} to="/Home/UserAccessRights">
+                                    <ListItemIcon>
+                                        <InboxIcon />
+                                    </ListItemIcon>
+                                    <ListItemText primary="User Access Rights" />
+                                </MenuItem>
 
                             </List>
                         </Collapse>
@@ -1106,8 +1113,7 @@ class MiniDrawer extends React.Component {
                     })}`}
                 >
                     {children}
-                    <Route exact path={`${this.props.match.path}/login`} component={Login} />
-                    <Route exact path={`${this.props.match.path}/`} component={LandingPage} />
+                    <Route exact path={`${this.props.match.path}/dashboard`} component={LandingPage} />
                     <Route exact path={`${this.props.match.path}/Resume`} component={Createresume} />
                     <Route exact path={`${this.props.match.path}/Recruitment`} component={Recruitment} />
                     <Route exact path={`${this.props.match.path}/Onlinetest`} component={OnlinetestTab} />
@@ -1162,6 +1168,8 @@ class MiniDrawer extends React.Component {
                     {/* User Management Module */}
                     <Route exact path={`${this.props.match.path}/UserGroup`} component={UserGroup} />
                     <Route exact path={`${this.props.match.path}/UserMaster`} component={UserMaster} />
+                    <Route exact path={`${this.props.match.path}/UserAccessRights`} component={Useraccess_rights} />
+
 
                     {/* Effort Invoice  Management */}
                     <Route exact path={`${this.props.match.path}/InvoiceDetails`} component={InvoiceDetails}/>

@@ -27,7 +27,8 @@ import { copyrightReducer } from '../components/Project-Management-Module/Copyri
 
 
 // usermanagement
-import {userGroupReducer} from "../components/User Management/reducer/UserGroupReducer"
+import {userGroupReducer} from "../components/User Management/reducer/UserGroupReducer";
+import {userAccessReducer} from "../components/User Management/reducer/useraccessReducer";
 import {UserMasterReducer} from "../components/User Management/User Master/usermasterreducer/UserMasterReducer";
 
 export default history => combineReducers({
@@ -58,5 +59,6 @@ export default history => combineReducers({
     taskAssignment:TaskAssignmentReducer,
     copyright:copyrightReducer,
     userGroup:userGroupReducer,
-    usermaster:UserMasterReducer
+    usermaster:UserMasterReducer,
+    useraccess:userAccessReducer,
 });

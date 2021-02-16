@@ -127,9 +127,7 @@ const SignInSide = (props) =>  {
     event.preventDefault()
     if(email === "") {
         setEmailError(true)
-    }
-
- 
+    } 
 
     if(password === "") {
        setPasswordError(true)
@@ -252,8 +250,8 @@ const SignInSide = (props) =>  {
            />
 
            <div>
-             {emailError && "Email is required"}
-             {invalidEmail && "Invalid email"}
+             {emailError && <span className="loginErrMsg">Email is required</span>}
+             {invalidEmail && <span className="loginErrMsg">Invalid email</span>}
            </div>
 
        <TextField
@@ -282,7 +280,7 @@ const SignInSide = (props) =>  {
            />
 
          <div>
-             {passwordError && "Password required"}
+             {passwordError && <span className="loginErrMsg">Password required</span>}
           </div>
 
           
@@ -291,7 +289,7 @@ const SignInSide = (props) =>  {
            }
 
 
-            <Grid container>
+            {/* <Grid container>
               <Grid item xs />
               <Grid item>
               
@@ -299,7 +297,7 @@ const SignInSide = (props) =>  {
                 	renderLink(link)
                 }
               </Grid>
-            </Grid>
+            </Grid> */}
             
           </form>
         </div>
