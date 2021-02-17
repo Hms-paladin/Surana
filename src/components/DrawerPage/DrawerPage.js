@@ -125,6 +125,9 @@ import UserManagement from "../../images/navbarLogo/User Management.svg"
 
 import AddRate from "../addRate/Addrate"
 import Useraccess_rights from '../User Management/UserAccess/userAccessRights';
+import { userAccessFunc } from '../User Management/action/useraccessAction';
+import { connect } from 'react-redux'
+
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -270,10 +273,41 @@ class MiniDrawer extends React.Component {
         this.setState({})
     }
 
+    componentDidMount(){
+        let local =  JSON.parse(localStorage.getItem("token"))
+        this.props.dispatch(userAccessFunc(local.data[0].id))
+    }
+
     render() {
         const { classes, children } = this.props;
         const { open } = this.state;
-        console.log(this.state.expand)
+        const { useraccess } = this.props
+
+        let HrAccess = useraccess && useraccess[0].item[0].item 
+        
+        let dashboardView = null
+
+        HrAccess && HrAccess.map((value)=>{
+            switch (value.id) {
+                case 1:
+                    dashboardView = value.allow_view
+                    break;
+            
+                default:
+                    break;
+            }
+           
+        })
+
+
+
+
+
+        // ["Dashboard", "Create Resume", "Recruitment", "Interview Management", "Online Test", "Interview Table", "Induction Program", "Payroll", "Leave Application", "Employee KRA", "Knowledge Management", "Employee Appraisal KPI", "Employee Appraisal", "Employee Master", "Severance", "Requirement Ticket"]
+
+        console.log(dashboardView,"useraccess")
+
+
 
         return (
             <div className={` posfix ${classes.root}`}>
@@ -346,12 +380,12 @@ class MiniDrawer extends React.Component {
 
                         <Collapse in={this.state.expand1} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/">
+                                { <MenuItem button className={classes.nested} component={Link} to="/Home/dashboard">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="DashBoard" />
-                                </MenuItem>
+                                </MenuItem>}
 
                                 <MenuItem button className={classes.nested} component={Link} to="/Home/Resume">
                                     <ListItemIcon>
@@ -962,7 +996,7 @@ class MiniDrawer extends React.Component {
                         <Collapse in={this.state.expand9} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
 
-                               <MenuItem button className={classes.nested} component={Link} to="/Home/dashboardclient">
+                               <MenuItem button className={classes.nested} disabled component={Link} to="/Home/dashboardclient">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
@@ -989,7 +1023,7 @@ class MiniDrawer extends React.Component {
                                 </MenuItem>
                             
                             </List>
-                        </Collapse> */}
+                        </Collapse>
 
 
                         {/* <MenuItem button onClick={() => this.collapse(10)}>
@@ -1206,6 +1240,17 @@ MiniDrawer.propTypes = {
     theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles, { withTheme: true })(MiniDrawer)
+const mapDispatchToProps = dispatch => ({
+	userAccessFunc,
+	dispatch                // ← Add this
+  })
+
+  const mapStateToProps = (state) => {
+    return {
+        useraccess:state.useraccess.useraccess
+    };
+  };
+  
+export default connect(mapStateToProps, mapDispatchToProps)(withStyles(styles, { withTheme: true })(MiniDrawer))
 
 

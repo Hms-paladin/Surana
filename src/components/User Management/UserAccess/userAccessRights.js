@@ -389,7 +389,7 @@ class Useraccess_rights extends Component {
       }
     }).then(response => {
 
-      this.props.dispatch(userAccessFunc(response.data.data))
+      this.props.dispatch(userAccessFunc(userid))
 
 
       var stroe_table_arr = response.data.data.map((val, index) => {

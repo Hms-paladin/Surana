@@ -5,6 +5,8 @@ import HttpsOutlinedIcon from '@material-ui/icons/HttpsOutlined';
 import { apiurl } from "../../App";
 import { useAuth } from "../../context/auth";
 import { Redirect } from "react-router-dom";
+import { userAccessFunc } from "../User Management/action/useraccessAction";
+import { connect } from 'react-redux'
 
 
 const axios = require('axios');
@@ -35,7 +37,7 @@ const link = {
 }
 
 
-export default function Index (){
+function Index (props){
 
 	const [isLoggedIn, setLoggedIn] = React.useState(false);
 	const { setAuthTokens } = useAuth();
@@ -49,13 +51,14 @@ export default function Index (){
 			if (result.status === 200) {
 			  setAuthTokens(result.data);
 			  setLoggedIn(true);
+			  props.dispatch(userAccessFunc(result.data.data[0].id))
 			} 
 		  }).catch(e => {
 		  });
 	}
 
 	if (isLoggedIn) {
-		return <Redirect to="/Home/Trademark" />;
+		return <Redirect to="/Home/dashboard" />;
 	  }
 
 	return (
@@ -72,6 +75,12 @@ export default function Index (){
 	);
 }
 
+const mapDispatchToProps = dispatch => ({
+	userAccessFunc,
+	dispatch                // ← Add this
+  })
+  
+  export default connect(null, mapDispatchToProps)(Index)
 
 // export default class index extends React.Component {
 
