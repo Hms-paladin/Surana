@@ -284,7 +284,13 @@ class MiniDrawer extends React.Component {
         const { useraccess } = this.props
 
         let HrAccess = useraccess && useraccess[0].item[0].item 
-        
+        let projectAccess = useraccess && useraccess[3].item[0].item 
+        let caseAccess = useraccess && useraccess[1].item[0].item 
+        let checkListAccess = useraccess && useraccess[2].item[0].item 
+        let productivityAccess = useraccess && useraccess[4].item[0].item 
+        let taskAccess = useraccess && useraccess[5].item[0].item 
+
+        // HR
         let dashboardView = null
         let resumeView = null
         let recruiteView = null
@@ -299,38 +305,193 @@ class MiniDrawer extends React.Component {
         let leaveAppView = null
         let severanceView = null
         let requirementTicketView = null
-        // let dashboardView = null
-        // let dashboardView = null
-        // let dashboardView = null
-        // let dashboardView = null
-        // let dashboardView = null
-        // let dashboardView = null
-        // let dashboardView = null
-        // let dashboardView = null
-        // let dashboardView = null
-        // let dashboardView = null
-        // let dashboardView = null
 
 
+        let hrmouleView = HrAccess && HrAccess.some((data)=>{
+            return data.allow_view === "Y"
+        })
+
+        let projectmoduleView = projectAccess && projectAccess.some((data)=>{
+            return data.allow_view === "Y"
+        })
+
+        let casemoduleView = caseAccess && caseAccess.some((data)=>{
+            return data.allow_view === "Y"
+        })
+
+        let checklistmoduleView = checkListAccess && checkListAccess.some((data)=>{
+            return data.allow_view === "Y"
+        })
+
+        let productivitymoduleView = productivityAccess && productivityAccess.some((data)=>{
+            return data.allow_view === "Y"
+        })
+
+        let taskmoduleView = taskAccess && taskAccess.some((data)=>{
+            return data.allow_view === "Y" 
+        })
+        
         HrAccess && HrAccess.map((value)=>{
+            
             switch (value.id) {
                 case 1:
-                    dashboardView = value.allow_view
+                    dashboardView = value.allow_view === "Y" ? true : false
                     break;
-            
+                case 2:
+                    resumeView = value.allow_view === "Y" ? true : false
+                    break;    
+                case 3:
+                    recruiteView = value.allow_view === "Y" ? true : false
+                    break;
+                case 4:
+                    questionView = value.allow_view === "Y" ? true : false
+                    break;    
+                case 5:
+                    onlineTestView = value.allow_view === "Y" ? true : false
+                    break;
+                case 6:
+                    interviewView = value.allow_view === "Y" ? true : false
+                    break;    
+                // case 1:
+                //     selCandidateView = value.allow_view === "Y" ? true : false
+                //     break;
+                case 14:
+                    empMasterView = value.allow_view === "Y" ? true : false
+                    break;    
+                case 10:
+                    KRAView = value.allow_view === "Y" ? true : false
+                    break;
+                case 12:
+                    KPIView = value.allow_view === "Y" ? true : false
+                    break;    
+                case 13:
+                    AppraisalView = value.allow_view === "Y" ? true : false
+                    break;
+                case 9:
+                    leaveAppView = value.allow_view === "Y" ? true : false
+                    break;    
+                case 15:
+                    severanceView = value.allow_view === "Y" ? true : false
+                    break;
+                case 16:
+                    requirementTicketView = value.allow_view === "Y" ? true : false
+                    break;    
                 default:
                     break;
             }
            
         })
 
+        // project 
+        let projectView = null
+        let ipStageView = null
+        let trademarkView = null
+        let designView = null
+        let patentView = null
+        let copyrightView = null
+        let ipProjectView = null
 
 
+        projectAccess && projectAccess.map((value)=>{
+            switch (value.id) {
+                case 27:
+                    projectView = value.allow_view === "Y" ? true : false
+                    break;
+                case 25:
+                    ipStageView = value.allow_view === "Y" ? true : false
+                    break;
+                case 21:
+                    trademarkView = value.allow_view === "Y" ? true : false
+                    break;
+                case 23:
+                    designView = value.allow_view === "Y" ? true : false
+                    break;
+                case 24:
+                    patentView = value.allow_view === "Y" ? true : false
+                    break;
+                case 26:
+                    copyrightView = value.allow_view === "Y" ? true : false
+                    break;
+                case 22:
+                    ipProjectView = value.allow_view === "Y" ? true : false
+                    break;
+                default:
+                    break;
+            }
+        })
+
+        // case
+        let courtView = null
+        let caseView = null
+        let dayreportView = null
 
 
-        // ["Dashboard", "Create Resume", "Recruitment", "Interview Management", "Online Test", "Interview Table", "Induction Program", "Payroll", "Leave Application", "Employee KRA", "Knowledge Management", "Employee Appraisal KPI", "Employee Appraisal", "Employee Master", "Severance", "Requirement Ticket"]
+        caseAccess && caseAccess.map((value)=>{
+            switch (value.id) {
+                case 17:
+                    courtView = value.allow_view === "Y" ? true : false
+                    break;
+                case 18:
+                    caseView = value.allow_view === "Y" ? true : false
+                    break;
+                case 19:
+                    dayreportView = value.allow_view === "Y" ? true : false
+                    break;
+                default:
+                    break;
+            }
+        })
 
-        console.log(dashboardView,"useraccess")
+        // productivity
+        let timeSheetView = null
+        let expenseView = null
+        let unblockUserView = null
+
+
+        productivityAccess && productivityAccess.map((value)=>{
+            switch (value.id) {
+                case 28:
+                    timeSheetView = value.allow_view === "Y" ? true : false
+                    break;
+                case 29:
+                    expenseView = value.allow_view === "Y" ? true : false
+                    break;
+                case 30:
+                    unblockUserView = value.allow_view === "Y" ? true : false
+                    break;
+                default:
+                    break;
+            }
+        })
+
+        // Task
+        let taskAssView = null
+
+        taskAccess && taskAccess.map((value)=>{
+            switch (value.id) {
+                case 31:
+                    taskAssView = value.allow_view === "Y" ? true : false
+                    break;
+                default:
+                    break;
+            }
+        })
+
+        // checkList
+        let checkListView = null
+
+        checkListAccess && checkListAccess.map((value)=>{
+            switch (value.id) {
+                case 20:
+                    checkListView = value.allow_view === "Y" ? true : false
+                    break;
+                default:
+                    break;
+            }
+        })
+
+
+        console.log(hrmouleView,"hrmouleView")
 
 
 
@@ -393,6 +554,7 @@ class MiniDrawer extends React.Component {
                     <MenuList className="menu_background_clr">
 
                         {/* Hr Module - One*/}
+                        {hrmouleView && <>
                         <MenuItem button onClick={() => this.collapse(1)} component={Link}>
                             <ListItemIcon>
                                 {/* <InboxIcon /> */}
@@ -405,47 +567,47 @@ class MiniDrawer extends React.Component {
 
                         <Collapse in={this.state.expand1} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
-                                { <MenuItem button className={classes.nested} component={Link} to="/Home/dashboard">
+                                {dashboardView && <MenuItem button className={classes.nested} component={Link} to="/Home/dashboard">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="DashBoard" />
                                 </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Resume">
+                               {resumeView && <MenuItem button className={classes.nested} component={Link} to="/Home/Resume">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Create Resume" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Recruitment">
+                                {recruiteView && <MenuItem button className={classes.nested} component={Link} to="/Home/Recruitment">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Recruitment" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/InterviewQuestions">
+                                {questionView && <MenuItem button className={classes.nested} component={Link} to="/Home/InterviewQuestions">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Questions" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Onlinetest">
+                                {onlineTestView && <MenuItem button className={classes.nested} component={Link} to="/Home/Onlinetest">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Online Test" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Interviewtable">
+                                {interviewView && <MenuItem button className={classes.nested} component={Link} to="/Home/Interviewtable">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Interview Management" />
-                                </MenuItem>
+                                </MenuItem>}
 
                                 <MenuItem button className={classes.nested} component={Link} to="/Home/selectedcandidates">
                                     <ListItemIcon>
@@ -454,28 +616,28 @@ class MiniDrawer extends React.Component {
                                     <ListItemText primary="Selected Candidates" />
                                 </MenuItem>
 
-                                <MenuItem className="ml-3" component={Link} to="/Home/EmployeeMaster">
+                                {empMasterView && <MenuItem className="ml-3" component={Link} to="/Home/EmployeeMaster">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Employee Master" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem className="ml-3" component={Link} to="/Home/EmployeeKRA">
+                                {KRAView && <MenuItem className="ml-3" component={Link} to="/Home/EmployeeKRA">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Employee KRA" />
-                                </MenuItem>
+                                </MenuItem>}
 
 
 
-                                <MenuItem className="ml-3" component={Link} to="/Home/EmployeeAppraisalkpi">
+                                {KPIView && <MenuItem className="ml-3" component={Link} to="/Home/EmployeeAppraisalkpi">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Employee Appraisal KPI" />
-                                </MenuItem>
+                                </MenuItem>}
 
                                 {/* <MenuItem className="ml-3" component={Link} component={Link} to="/Home/Appraisal">
                                     <ListItemIcon>
@@ -484,7 +646,7 @@ class MiniDrawer extends React.Component {
                                     <ListItemText primary="dd" />
                                 </MenuItem> */}
 {/* Employee Appraisal start */}
-                                <MenuItem className="ml-3" button onClick={() => this.collapse(14)}  >
+                                {AppraisalView &&<><MenuItem className="ml-3" button onClick={() => this.collapse(14)}  >
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
@@ -515,14 +677,15 @@ class MiniDrawer extends React.Component {
                                         </MenuItem>
                                     </List>
                                 </Collapse>
+                                </>}
 {/* Employee Appraisal end*/}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Leave">
+                                {leaveAppView && <MenuItem button className={classes.nested} component={Link} to="/Home/Leave">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Leave Application" />
-                                </MenuItem>
+                                </MenuItem>}
 
                                 {/* <MenuItem button className={classes.nested} component={Link} to="/Home/Payroll">
                                     <ListItemIcon>
@@ -531,19 +694,19 @@ class MiniDrawer extends React.Component {
                                     <ListItemText primary="Payroll" />
                                 </MenuItem> */}
 
-                                <MenuItem className="ml-3" component={Link} to="/Home/Severance">
+                                {severanceView && <MenuItem className="ml-3" component={Link} to="/Home/Severance">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Severance" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem className="ml-3" component={Link} to="/Home/Ticket">
+                                {requirementTicketView && <MenuItem className="ml-3" component={Link} to="/Home/Ticket">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Requirement Ticket" />
-                                </MenuItem>
+                                </MenuItem>}
 
 
                                 {/* <MenuItem button className={classes.nested} component={Link} to="/Home/Induction">
@@ -602,9 +765,13 @@ class MiniDrawer extends React.Component {
 
                             </List>
                         </Collapse>
+                        
+                        </>}
+                        
                         {/* Hr Module */}
 
                         {/* Project Management - Two*/}
+                        {projectmoduleView && <>
                         <MenuItem button onClick={() => this.collapse(2)}>
                             <ListItemIcon>
                                 {/* <InboxIcon /> */}
@@ -616,62 +783,64 @@ class MiniDrawer extends React.Component {
                         <Collapse in={this.state.expand2} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Project">
+                                {projectView && <MenuItem button className={classes.nested} component={Link} to="/Home/Project">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Project" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/ProjectTemplate">
+                                {ipStageView && <MenuItem button className={classes.nested} component={Link} to="/Home/ProjectTemplate">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="IP Stage Template" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Trademark">
+                                {trademarkView && <MenuItem button className={classes.nested} component={Link} to="/Home/Trademark">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Trade Mark" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Design">
+                                {designView && <MenuItem button className={classes.nested} component={Link} to="/Home/Design">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Design" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Patent">
+                                {patentView && <MenuItem button className={classes.nested} component={Link} to="/Home/Patent">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Patent" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Copyright">
+                                {copyrightView && <MenuItem button className={classes.nested} component={Link} to="/Home/Copyright">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="CopyRight" />
-                                </MenuItem>
+                                </MenuItem>}
 
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/trademarkdetails">
+                                {ipProjectView && <MenuItem button className={classes.nested} component={Link} to="/Home/trademarkdetails">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="IP Project Dashboard" />
-                                </MenuItem>
+                                </MenuItem>}
 
                                
                             </List>
                         </Collapse>
+                        </>}
                         {/* Project Management  End*/}
 
                         {/* Case Management - Three*/}
+                        {casemoduleView && <>
                         <MenuItem button onClick={() => this.collapse(3)}>
                             <ListItemIcon>
                             <img src={CaseLogo} className="navbarLogo" />
@@ -684,31 +853,33 @@ class MiniDrawer extends React.Component {
                         <Collapse in={this.state.expand3} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Courtform">
+                                {courtView && <MenuItem button className={classes.nested} component={Link} to="/Home/Courtform">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Court" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Case">
+                                {caseView && <MenuItem button className={classes.nested} component={Link} to="/Home/Case">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Case" />
-                                </MenuItem>
+                                </MenuItem>}
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Dayreport">
+                                {dayreportView && <MenuItem button className={classes.nested} component={Link} to="/Home/Dayreport">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Day Report" />
-                                </MenuItem>
+                                </MenuItem>}
                             </List>
                         </Collapse>
+                        </>}
                         {/* Case Management End*/}
 
                         {/* Productivity Module - Four*/}
+                        {productivitymoduleView && <>
                         <MenuItem button onClick={() => this.collapse(4)}>
                             <ListItemIcon>
                             <img src={Productivity} className="navbarLogo" />
@@ -718,27 +889,27 @@ class MiniDrawer extends React.Component {
                         </MenuItem>
                         <Collapse in={this.state.expand4} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Timesheet">
+                                {timeSheetView && <MenuItem button className={classes.nested} component={Link} to="/Home/Timesheet">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Timesheet" />
-                                </MenuItem>
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Expense">
+                                </MenuItem>}
+                                {expenseView && <MenuItem button className={classes.nested} component={Link} to="/Home/Expense">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Expense" />
-                                </MenuItem>
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/Unblockuser">
+                                </MenuItem>}
+                                {unblockUserView && <MenuItem button className={classes.nested} component={Link} to="/Home/Unblockuser">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Unblockuser" />
-                                </MenuItem>
+                                </MenuItem>}
                             </List>
                         </Collapse>
-
+                        </>}
                         {/* Productivity End */}
 
                         {/* Invoice - Five */}
@@ -764,6 +935,7 @@ class MiniDrawer extends React.Component {
 
 
                         {/* Task Management - Six*/}
+                        {taskmoduleView && <>
                         <MenuItem button onClick={() => this.collapse(6)}>
                             <ListItemIcon>
                             <img src={Task} className="navbarLogo" />
@@ -774,22 +946,23 @@ class MiniDrawer extends React.Component {
                         <Collapse in={this.state.expand6} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/TaskAssignment">
+                                {taskAssView && <MenuItem button className={classes.nested} component={Link} to="/Home/TaskAssignment">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Task Assignment" />
-                                </MenuItem>
+                                </MenuItem>}
 
                             </List>
                         </Collapse>
+                        </>}
 
                         {/* Task Management End */}
 
 
 
                         {/* Checklist Management - Seven*/}
-
+                        {checklistmoduleView && <>
                         <MenuItem button onClick={() => this.collapse(7)}>
                             <ListItemIcon>
                             <img src={Checklist} className="navbarLogo" />
@@ -800,14 +973,15 @@ class MiniDrawer extends React.Component {
                         <Collapse in={this.state.expand7} timeout="auto" unmountOnExit>
                             <List component="div" disablePadding>
 
-                                <MenuItem button className={classes.nested} component={Link} to="/Home/ChecklistTab">
+                                {checkListView && <MenuItem button className={classes.nested} component={Link} to="/Home/ChecklistTab">
                                     <ListItemIcon>
                                         <InboxIcon />
                                     </ListItemIcon>
                                     <ListItemText primary="Checklist Management" />
-                                </MenuItem>
+                                </MenuItem>}
                             </List>
                         </Collapse>
+                        </>}
                         {/* Checklist Management */}
 
                         {/* Knowledge - Eight */}

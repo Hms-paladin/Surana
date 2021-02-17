@@ -388,8 +388,10 @@ class Useraccess_rights extends Component {
         // "user_id": 7
       }
     }).then(response => {
-
+      let local =  JSON.parse(localStorage.getItem("token"))
+      if(local.data[0].id === userid){
       this.props.dispatch(userAccessFunc(userid))
+      }
 
 
       var stroe_table_arr = response.data.data.map((val, index) => {
