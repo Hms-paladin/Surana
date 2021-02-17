@@ -286,6 +286,31 @@ class MiniDrawer extends React.Component {
         let HrAccess = useraccess && useraccess[0].item[0].item 
         
         let dashboardView = null
+        let resumeView = null
+        let recruiteView = null
+        let questionView = null
+        let onlineTestView = null
+        let interviewView = null
+        let selCandidateView = null
+        let empMasterView = null
+        let KRAView = null
+        let KPIView = null
+        let AppraisalView = null
+        let leaveAppView = null
+        let severanceView = null
+        let requirementTicketView = null
+        // let dashboardView = null
+        // let dashboardView = null
+        // let dashboardView = null
+        // let dashboardView = null
+        // let dashboardView = null
+        // let dashboardView = null
+        // let dashboardView = null
+        // let dashboardView = null
+        // let dashboardView = null
+        // let dashboardView = null
+        // let dashboardView = null
+
 
         HrAccess && HrAccess.map((value)=>{
             switch (value.id) {
